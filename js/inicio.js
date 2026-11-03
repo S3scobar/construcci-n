@@ -1,8 +1,8 @@
 /* =============================================
    CONSTRUCCIÓN · FACULTAD DE ARQUITECTURA
    MÓDULO INICIO — ARQUITECTURA, INGENIERÍA Y EDIFICACIÓN
-   Pide sus propios datos: programa.json al abrir,
-   perfil.json y grupos.json cuando la persona se acerca a esa sección.
+   "El Plano que se Construye": Trazado de ejes, cotas de nivel
+   y montaje de elementos estructurales al hacer scroll.
    ============================================= */
 
 const ICONOS_ARQ = {
@@ -35,15 +35,83 @@ const svgIcono = (nombre, size = 22) => `
 const ICONO_SELLO = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/><path d="m9.5 9 1.8 1.8L15 7.2"/></svg>';
 
 
-/* ---------- Programa ---------- */
+/* ---------- 1. Animación de Conteo de Cifras (Estación Total) ---------- */
+
+function animarCifras() {
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const elementos = $$('#portada-cifras li');
+  elementos.forEach((li) => {
+    const small = li.querySelector('small');
+    if (!small) return;
+    const textoCompleto = li.textContent.replace(small.textContent, '').trim();
+    const numero = parseInt(textoCompleto.replace(/\D/g, ''), 10);
+    if (isNaN(numero) || numero <= 0) return;
+
+    const tieneSufijo = textoCompleto.includes('+') ? '+' : '';
+    const duracion = 1200;
+    const inicio = performance.now();
+
+    function actualizar(ahora) {
+      const transcurrido = ahora - inicio;
+      const progreso = Math.min(transcurrido / duracion, 1);
+      const facilidad = progreso === 1 ? 1 : 1 - Math.pow(2, -10 * progreso);
+      const actual = Math.floor(facilidad * numero);
+
+      const nodoTexto = Array.from(li.childNodes).find(n => n.nodeType === Node.TEXT_NODE);
+      if (nodoTexto) {
+        nodoTexto.textContent = `${actual}${progreso === 1 ? tieneSufijo : ''} `;
+      }
+
+      if (progreso < 1) {
+        requestAnimationFrame(actualizar);
+      }
+    }
+    requestAnimationFrame(actualizar);
+  });
+}
+
+
+/* ---------- 2. Observador de Plano y Construcción en Scroll ---------- */
+
+let observadorPlano = null;
+
+function observarPlanoConstruccion() {
+  const elementos = $$('.plano-construir:not(.plano-construido)');
+  if (!elementos.length) return;
+
+  if (window.matchMedia('(prefers-reduced-motion: reduce)').matches || !('IntersectionObserver' in window)) {
+    elementos.forEach(el => el.classList.add('plano-construido'));
+    return;
+  }
+
+  if (!observadorPlano) {
+    observadorPlano = new IntersectionObserver((entradas) => {
+      entradas.forEach((entrada) => {
+        if (entrada.isIntersecting) {
+          entrada.target.classList.add('plano-construido');
+          observadorPlano.unobserve(entrada.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -50px 0px',
+      threshold: 0.12
+    });
+  }
+
+  elementos.forEach(el => observadorPlano.observe(el));
+}
+
+
+/* ---------- 3. Programa y Especificaciones ---------- */
 
 function pintarPrograma(p) {
-  // 1. Cifras en la portada (modular architectural cards)
+  // Cifras en la portada (modular architectural cards)
   const cifrasWrap = $('#portada-cifras');
   if (cifrasWrap) {
     cifrasWrap.innerHTML = p.cifras
-      .map((c) => `<li>${esc(c.valor)}<small>${esc(c.texto)}</small></li>`)
+      .map((c) => `<li class="cifra-plano">${esc(c.valor)}<small>${esc(c.texto)}</small></li>`)
       .join('');
+    animarCifras();
   }
 
   const acreditacion = p.acreditacion;
@@ -51,8 +119,17 @@ function pintarPrograma(p) {
   if (!contenido) return;
 
   contenido.innerHTML = `
+    <!-- EJE ESTRUCTURAL 01 · FUNDAMENTACIÓN -->
+    <div class="cota-eje plano-construir">
+      <span class="cota-eje__marca">01</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__nivel">▲ N.P.T. +3.50m</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__marca">EJE A</span>
+    </div>
+
     <!-- ENCABEZADO DE LA SECCIÓN -->
-    <div class="seccion-titulo">
+    <div class="seccion-titulo plano-construir">
       <h2 id="programa-titulo">Definición y Enfoque del Pregrado</h2>
       <p class="seccion-titulo__intro">
         Formación integral en ciencias de la ingeniería, sensibilidad del diseño arquitectónico, gestión estratégica y tecnología de la edificación y el hábitat.
@@ -62,8 +139,8 @@ function pintarPrograma(p) {
     <!-- TABLERO TÉCNICO: DESCRIPCIÓN Y ESPECIFICACIONES DE OBRA -->
     <div class="tablero-obra">
       <!-- COLUMNA IZQUIERDA: IDENTIDAD Y VISIÓN -->
-      <div class="tablero-obra__col-identidad">
-        <div class="tablero-obra__tarjeta-vision">
+      <div class="tablero-obra__col-identidad plano-construir">
+        <div class="tablero-obra__tarjeta-vision plano-bloque">
           <div class="tablero-obra__badge-arquitectura">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16" aria-hidden="true"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
             <span>Escuela de Construcción · Área Curricular de Construcción y Hábitat</span>
@@ -76,8 +153,8 @@ function pintarPrograma(p) {
       </div>
 
       <!-- COLUMNA DERECHA: ESPECIFICACIONES CLAVE -->
-      <div class="tablero-obra__col-ficha">
-        <div class="ficha-especificaciones">
+      <div class="tablero-obra__col-ficha plano-construir">
+        <div class="ficha-especificaciones plano-bloque">
           <div class="ficha-especificaciones__cabecera">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><rect width="18" height="18" x="3" y="3" rx="2"/><path d="M3 9h18"/><path d="M9 21V9"/></svg>
             <h3>Matriz Académica y Registro</h3>
@@ -95,7 +172,16 @@ function pintarPrograma(p) {
 
     <!-- RUTAS CURRICULARES OFICIALES -->
     <div class="rutas-curriculares" id="rutas-curriculares">
-      <div class="seccion-titulo seccion-titulo--rutas">
+      <!-- EJE ESTRUCTURAL 02 · TRAYECTORIAS -->
+      <div class="cota-eje plano-construir">
+        <span class="cota-eje__marca">02</span>
+        <span class="cota-eje__linea"></span>
+        <span class="cota-eje__nivel">▲ N.P.T. +7.00m</span>
+        <span class="cota-eje__linea"></span>
+        <span class="cota-eje__marca">EJE B</span>
+      </div>
+
+      <div class="seccion-titulo seccion-titulo--rutas plano-construir">
         <h3 class="rutas__titulo">Cinco Rutas Curriculares de Énfasis</h3>
         <p class="seccion-titulo__intro">
           Trayectorias optativas del plan de estudios (Acuerdo 002 de 2022 del Consejo de Facultad):
@@ -126,7 +212,7 @@ function pintarPrograma(p) {
           const num = `0${idx + 1}`;
 
           return `
-            <article class="ruta-bento ${claseExtra}" id="ruta-${esc(ruta.id)}">
+            <article class="ruta-bento ${claseExtra} plano-bloque plano-construir" id="ruta-${esc(ruta.id)}">
               <span class="ruta-bento__watermark" aria-hidden="true">${num}</span>
               
               <div class="ruta-bento__top">
@@ -154,7 +240,7 @@ function pintarPrograma(p) {
     </div>
 
     <!-- CERTIFICACIÓN Y ACREDITACIÓN DE CALIDAD -->
-    <div class="acreditacion">
+    <div class="acreditacion plano-bloque plano-construir">
       <div class="acreditacion__cabecera">
         <span class="acreditacion__sello-icono">${ICONO_SELLO}</span>
         <div>
@@ -178,13 +264,15 @@ function pintarPrograma(p) {
       </div>
     </div>
 
-    <p class="fuentes">Fuentes oficiales:
+    <p class="fuentes plano-construir">Fuentes oficiales:
       ${p.fuentes.map((f) => `<a href="${esc(f.url)}" target="_blank" rel="noopener">${esc(f.titulo)}</a>`).join(' · ')}
     </p>`;
+
+  observarPlanoConstruccion();
 }
 
 
-/* ---------- Perfil del egresado ---------- */
+/* ---------- 5. Perfil del Egresado ---------- */
 
 function pintarPerfil(perfil) {
   const contenido = $('#perfil-contenido');
@@ -198,7 +286,16 @@ function pintarPerfil(perfil) {
   ];
 
   contenido.innerHTML = `
-    <div class="seccion-titulo">
+    <!-- EJE ESTRUCTURAL 03 · COMPETENCIAS -->
+    <div class="cota-eje plano-construir">
+      <span class="cota-eje__marca">03</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__nivel">▲ N.P.T. +10.50m</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__marca">EJE C</span>
+    </div>
+
+    <div class="seccion-titulo plano-construir">
       <div class="cajetin-proyecto cajetin-proyecto--sub">
         <span>CAMPO OCUPACIONAL · TÍTULO ARQUITECTO(A) CONSTRUCTOR(A)</span>
       </div>
@@ -210,7 +307,7 @@ function pintarPerfil(perfil) {
       ${perfil.rasgos.map((r, idx) => {
         const campo = camposAccion[idx] || { rol: 'COMPETENCIA PROFESIONAL', icono: 'estructura' };
         return `
-          <div class="rasgo-profesional">
+          <div class="rasgo-profesional plano-bloque plano-construir">
             <div class="rasgo-profesional__cabecera">
               <span class="rasgo-profesional__tag">${esc(campo.rol)}</span>
               <span class="rasgo-profesional__icono">${svgIcono(campo.icono, 24)}</span>
@@ -224,58 +321,63 @@ function pintarPerfil(perfil) {
           </div>`;
       }).join('')}
     </div>
-    <p class="perfil__fuente">${esc(perfil.fuente)}</p>`;
+    <p class="perfil__fuente plano-construir">${esc(perfil.fuente)}</p>`;
+
+  observarPlanoConstruccion();
 }
 
 
-/* ---------- Grupos de investigación y semilleros ---------- */
+/* ---------- 6. Grupos de Investigación y Semilleros ---------- */
 
 function pintarGrupos(grupos) {
   const contenido = $('#grupos-contenido');
   if (!contenido) return;
 
-  // Filtrar exclusivamente los grupos y semilleros de investigación
   const semilleros = grupos.filter(g => !g.id.includes('representacion'));
 
   const semillerosCards = semilleros.map((grupo) => {
-    const destino = grupo.enlace ? `href="${esc(grupo.enlace)}" target="_blank" rel="noopener noreferrer"` : '';
-    let iconoTipo = 'materiales';
-    if (grupo.id === 'gic') iconoTipo = 'estructura';
-    else if (grupo.id.includes('ambiente') || grupo.id.includes('habitat')) iconoTipo = 'habitat';
-
     return `
-      <article class="grupo-card" style="--color-grupo: ${esc(grupo.color)};">
+      <article class="grupo-card plano-bloque plano-construir" id="grupo-${esc(grupo.id)}" style="--color-grupo: ${esc(grupo.color)}">
         <div class="grupo-card__header">
           <div class="grupo-card__emblema">
-            <span class="grupo-card__emblema-fondo"></span>
-            <div class="grupo-card__emblema-icono">
-              ${svgIcono(iconoTipo, 26)}
-            </div>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="26" height="26" aria-hidden="true">
+              ${ICONOS_ARQ.materiales}
+            </svg>
           </div>
           <div class="grupo-card__titulos">
             <span class="grupo-card__tipo">${esc(grupo.tipo)}</span>
-            <h4 class="grupo-card__nombre">${esc(grupo.nombre)}</h4>
+            <h3 class="grupo-card__nombre">${esc(grupo.nombre)}</h3>
           </div>
         </div>
 
-        <p class="grupo-card__descripcion">${esc(grupo.descripcion || '')}</p>
+        <p class="grupo-card__descripcion">${esc(grupo.descripcion)}</p>
 
         <div class="grupo-card__acciones">
           ${grupo.email ? `
-            <a class="grupo-card__btn grupo-card__btn--correo" href="mailto:${esc(grupo.email)}" title="Escribir correo">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
-              <span>${esc(grupo.email)}</span>
+            <a href="mailto:${esc(grupo.email)}" class="grupo-card__btn grupo-card__btn--correo" title="Enviar correo de contacto">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="14" height="14" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <span>Contacto</span>
             </a>` : ''}
-          ${destino ? `
-            <a class="grupo-card__btn grupo-card__btn--enlace" ${destino} title="Ver detalles y convocatorias">
-              <span>Sitio oficial ↗</span>
+          ${grupo.enlace ? `
+            <a href="${esc(grupo.enlace)}" target="_blank" rel="noopener" class="grupo-card__btn grupo-card__btn--enlace" title="Sitio oficial del semillero">
+              <span>Facultad</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="13" height="13" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>` : ''}
         </div>
       </article>`;
   }).join('');
 
   contenido.innerHTML = `
-    <div class="seccion-titulo seccion-titulo--comunidad">
+    <!-- EJE ESTRUCTURAL 04 · LÍNEAS EXPERIMENTALES -->
+    <div class="cota-eje cota-eje--oscuro plano-construir">
+      <span class="cota-eje__marca">04</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__nivel">▲ N.P.T. +14.00m</span>
+      <span class="cota-eje__linea"></span>
+      <span class="cota-eje__marca">EJE D</span>
+    </div>
+
+    <div class="seccion-titulo seccion-titulo--comunidad plano-construir">
       <div class="cajetin-proyecto cajetin-proyecto--sub">
         <span>INVESTIGACIÓN Y DESARROLLO · FACULTAD DE ARQUITECTURA</span>
       </div>
@@ -289,10 +391,12 @@ function pintarGrupos(grupos) {
     <div class="semilleros-grid">
       ${semillerosCards}
     </div>`;
+
+  observarPlanoConstruccion();
 }
 
 
-/* ---------- Carga por secciones ---------- */
+/* ---------- 7. Inicialización y Carga Modular ---------- */
 
 const SECCIONES = {
   perfil: () => cargarDatos('perfil').then(pintarPerfil),
@@ -306,10 +410,12 @@ function cargarSeccion(seccion) {
   }
 }
 
+// Cargar programa inmediatamente
 cargarDatos('programa')
   .then(pintarPrograma)
   .catch((error) => mostrarErrorDeCarga($('#programa-contenido'), error));
 
+// Carga perezosa con IntersectionObserver
 const porCargar = $$('[data-carga]');
 if ('IntersectionObserver' in window) {
   const vigilante = new IntersectionObserver((entradas) => {
@@ -317,8 +423,9 @@ if ('IntersectionObserver' in window) {
       vigilante.unobserve(e.target);
       cargarSeccion(e.target);
     });
-  }, { rootMargin: '400px 0px' });
+  }, { rootMargin: '300px 0px' });
   porCargar.forEach((seccion) => vigilante.observe(seccion));
 } else {
   porCargar.forEach(cargarSeccion);
 }
+

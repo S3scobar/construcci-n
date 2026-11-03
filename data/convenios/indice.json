@@ -18,7 +18,7 @@
    "tipo": "convenio",
    "categoria": "Cursos en línea",
    "icono": "birrete",
-   "color": "#805B46",
+   "color": "#795446",
    "resumen": "Cursos y programas en línea para estudiantes activos, docentes y administrativos, con tu correo @unal.edu.co."
   },
   {
@@ -27,7 +27,7 @@
    "tipo": "convenio",
    "categoria": "Software de cálculo",
    "icono": "funcion",
-   "color": "#4B4038",
+   "color": "#33363B",
    "resumen": "Licencia de MATLAB y Simulink de la Universidad, disponible a través de MathWorks."
   },
   {
@@ -36,7 +36,7 @@
    "tipo": "convenio",
    "categoria": "Ofimática y nube",
    "icono": "documento",
-   "color": "#B28B6B",
+   "color": "#7D7660",
    "resumen": "Word, Excel, PowerPoint y más con tu correo institucional. Pasos por confirmar con la Universidad."
   },
   {
@@ -45,7 +45,7 @@
    "tipo": "beneficio",
    "categoria": "Diseño e ingeniería",
    "icono": "cubo",
-   "color": "#4B4038",
+   "color": "#33363B",
    "resumen": "Acceso educativo gratuito de un año (renovable) a AutoCAD, Revit, Inventor, Fusion y más."
   },
   {
@@ -54,7 +54,7 @@
    "tipo": "beneficio",
    "categoria": "Desarrollo de software",
    "icono": "codigo",
-   "color": "#65715B",
+   "color": "#94914E",
    "resumen": "Herramientas de desarrollo gratuitas para estudiantes, con una cuenta de GitHub verificada."
   },
   {
@@ -63,7 +63,7 @@
    "tipo": "beneficio",
    "categoria": "Entornos de programación",
    "icono": "terminal",
-   "color": "#805B46",
+   "color": "#795446",
    "resumen": "IDEs, complementos y cursos de JetBrains para tus estudios."
   },
   {
@@ -72,7 +72,7 @@
    "tipo": "beneficio",
    "categoria": "Música",
    "icono": "nota",
-   "color": "#65715B",
+   "color": "#94914E",
    "resumen": "Descuento para estudiantes de educación superior, verificado con SheerID, hasta por 4 años."
   }
  ]

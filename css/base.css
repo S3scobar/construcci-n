@@ -14,42 +14,48 @@
 /* ---------- 1. Variables y base ---------- */
 
 :root {
-  /* Paleta Oficial Construcción · Facultad de Arquitectura (Paleta 02: Tierra y arquitectura + gris cemento) */
-  --cafe-profundo: #4B4038;       /* Contraste profundo para textos, sombras y cabeceras */
-  --tierra: #805B46;              /* Dominante de marca: ladrillo, arcilla, botones y acentos */
-  --madera: #B28B6B;              /* Acento cálido estructural: tabs, bordes y badges */
-  --arena: #D5BFA5;               /* Fondo suave, highlights y píldoras */
-  --marfil: #EEE5D8;              /* Papel arquitectónico, fondos claros y contrastes limpios */
-  --oliva: #65715B;               /* Sostenibilidad, ambiente y libre elección */
-  --gris-cemento: #929493;        /* Concreto, líneas de retícula y metadatos */
+  /* Paleta Oficial Construcción · Facultad de Arquitectura (Palette 126 Coolors) */
+  --carbon: #33363B;              /* Carbón / Pizarra: Textos principales, cabeceras, disciplinares */
+  --arcilla: #795446;             /* Arcilla / Terracota: Marca, botones primarios, fundamentación */
+  --cemento-calido: #7D7660;      /* Gris cálido / Topo: Bordes, acentos estructurales, optativas */
+  --oliva: #94914E;               /* Oliva dorado: Libre elección, sostenibilidad, badges */
+  --arena-lino: #E4DCC7;          /* Arena lino: Fondos secundarios, píldoras, tarjetas */
+
+  /* Mapeo de identidad */
+  --cafe-profundo: var(--carbon);
+  --tierra: var(--arcilla);
+  --madera: var(--cemento-calido);
+  --arena: var(--arena-lino);
+  --marfil: #F5F1E8;              /* Papel claro y contrastes suaves */
+  --gris-cemento: var(--cemento-calido);
 
   /* Aliases de compatibilidad */
-  --verde-bosque: var(--cafe-profundo);
-  --turquesa: var(--madera);
-  --lima-vibrante: var(--arena);
+  --verde-bosque: var(--carbon);
+  --turquesa: var(--cemento-calido);
+  --lima-vibrante: var(--arena-lino);
   --lima-suave: var(--marfil);
-  --azul-marino: var(--cafe-profundo);
+  --azul-marino: var(--carbon);
 
-  --color-primario: var(--tierra);
-  --color-acento: var(--madera);
-  --color-secundario: var(--cafe-profundo);
-  --color-resalte: var(--arena);
+  --color-primario: var(--arcilla);
+  --color-acento: var(--cemento-calido);
+  --color-secundario: var(--carbon);
+  --color-resalte: var(--arena-lino);
 
-  --azul: var(--tierra);
-  --azul-oscuro: var(--cafe-profundo);
-  --azul-brillante: var(--madera);
-  --papel: #FAF7F2;
-  --tinta: #2C2420;
-  --tinta-suave: #4B4038;
-  --gris: #6B635C;
-  --linea: #DDD5CA;
+  --azul: var(--arcilla);
+  --azul-oscuro: var(--carbon);
+  --azul-brillante: var(--oliva);
+  --papel: #FAF8F5;
+  --tinta: #33363B;
+  --tinta-suave: #7D7660;
+  --gris: #7D7660;
+  --linea: #D5CCB6;
 
   /* Colores de los componentes de la malla */
-  --fundamentacion: #805B46;     /* Tierra / Arcilla (Ciencias Básicas e Ingeniería) */
-  --disciplinar: #4B4038;        /* Café Profundo (Sistemas Constructivos y Obras) */
-  --libre: #65715B;              /* Oliva (Libre Elección y Hábitat) */
-  --optativa: #B28B6B;          /* Madera (Rutas Curriculares de Énfasis) */
-  --nivelacion: #929493;        /* Gris Cemento (Nivelación) */
+  --fundamentacion: #795446;     /* Arcilla / Terracota (Ciencias Básicas e Ingeniería) */
+  --disciplinar: #33363B;        /* Carbón / Pizarra (Sistemas Constructivos y Obras) */
+  --libre: #94914E;              /* Oliva dorado (Libre Elección y Hábitat) */
+  --optativa: #7D7660;           /* Cemento cálido (Rutas Curriculares de Énfasis) */
+  --nivelacion: #7D7660;         /* Cemento cálido */
 
   /* Tipografías modernas que evocan Construcción y Hábitat */
   --letra-titulo: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;

@@ -1278,7 +1278,7 @@
   margin-top: 48px;
   padding: 32px 36px;
   border-radius: 24px;
-  background: linear-gradient(135deg, var(--cafe-profundo) 0%, #3D332D 60%, var(--tierra) 100%);
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--carbon) 60%, var(--tierra) 100%);
   border: 1.5px solid var(--madera);
   border-left: 8px solid var(--arena);
   box-shadow: 0 16px 36px -12px rgba(45, 30, 20, 0.45);
@@ -1453,20 +1453,20 @@
    REDISEÑO DE TARJETAS (Paleta 02: Tierra y arquitectura)
    ========================================================= */
 .info-tarjeta {
-  --acento: #805B46; --acento-osc: #4B4038; --acento-suave: #EEE5D8;
+  --acento: #795446; --acento-osc: #33363B; --acento-suave: #E4DCC7;
   padding: 0; border: 0; border-radius: 28px;
   box-shadow: 0 1px 2px rgba(75, 64, 56, .06), 0 22px 44px -26px rgba(75, 64, 56, .28);
 }
 .info-tarjeta:hover { box-shadow: 0 1px 2px rgba(75, 64, 56, .06), 0 28px 54px -26px rgba(75, 64, 56, .35); }
-.info-tarjeta[data-cat="calendario"]         { --acento: #805B46; --acento-osc: #4B4038; --acento-suave: #EEE5D8; }
-.info-tarjeta[data-cat="citas"]              { --acento: #B28B6B; --acento-osc: #4B4038; --acento-suave: #FAF7F2; }
-.info-tarjeta[data-cat="papa"]               { --acento: #805B46; --acento-osc: #3D332D; --acento-suave: #EEE5D8; }
-.info-tarjeta[data-cat="creditos"]           { --acento: #65715B; --acento-osc: #4B4038; --acento-suave: #EEE5D8; }
-.info-tarjeta[data-cat="corresponsabilidad"] { --acento: #B28B6B; --acento-osc: #4B4038; --acento-suave: #FAF7F2; }
+.info-tarjeta[data-cat="calendario"]         { --acento: #795446; --acento-osc: #33363B; --acento-suave: #E4DCC7; }
+.info-tarjeta[data-cat="citas"]              { --acento: #7D7660; --acento-osc: #33363B; --acento-suave: #FAF7F2; }
+.info-tarjeta[data-cat="papa"]               { --acento: #795446; --acento-osc: #33363B; --acento-suave: #E4DCC7; }
+.info-tarjeta[data-cat="creditos"]           { --acento: #94914E; --acento-osc: #33363B; --acento-suave: #E4DCC7; }
+.info-tarjeta[data-cat="corresponsabilidad"] { --acento: #7D7660; --acento-osc: #33363B; --acento-suave: #FAF7F2; }
 .info-tarjeta[data-cat="tramites"],
-.info-tarjeta[data-cat="solicitudes"]        { --acento: #805B46; --acento-osc: #362D27; --acento-suave: #EEE5D8; }
+.info-tarjeta[data-cat="solicitudes"]        { --acento: #795446; --acento-osc: #33363B; --acento-suave: #E4DCC7; }
 .info-tarjeta[data-cat="faq"],
-.info-tarjeta[data-cat="glosario"]           { --acento: #929493; --acento-osc: #4B4038; --acento-suave: #EEE5D8; }
+.info-tarjeta[data-cat="glosario"]           { --acento: #7D7660; --acento-osc: #33363B; --acento-suave: #E4DCC7; }
 
 /* Encabezado con degradado */
 .info-hero {

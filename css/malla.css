@@ -15,7 +15,7 @@
 .malla-drive {
   max-width: 980px;
   margin: 0 auto 48px;
-  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--tierra) 60%, #3a302a 100%);
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--tierra) 60%, var(--carbon) 100%);
   border-radius: 24px;
   border: 1.5px solid var(--madera);
   border-left: 8px solid var(--arena);
@@ -245,12 +245,12 @@
   gap: 8px;
   padding-bottom: 12px;
   border-radius: 14px;
-  background: #f2f4f7;
+  background: var(--marfil);
 }
 .semestre__cabeza {
   padding: 10px 6px 8px;
   text-align: center;
-  border-bottom: 2px solid #d5dae1;
+  border-bottom: 2px solid var(--linea);
 }
 .semestre__cabeza h3 {
   font-family: var(--letra-universidad);
@@ -322,7 +322,7 @@
 }
 .materia__codigo {
   padding: 3px 8px;
-  background: #c3cde3;
+  background: var(--arena-lino);
   font-size: 11px;
   letter-spacing: .02em;
   color: var(--tinta-suave);
@@ -332,7 +332,7 @@
   display: block;
 }
 .materia--bolsa .materia__nombre { font-size: 12px; color: var(--tinta-suave); }
-.materia--bolsa .materia__codigo { background: #e7eaf0; font-style: italic; }
+.materia--bolsa .materia__codigo { background: var(--marfil); font-style: italic; }
 
 /* Al pasar el cursor o elegir una materia, el resto se atenúa y se marcan sus relaciones en colores */
 .rejilla.hay-seleccion .materia {
@@ -364,49 +364,49 @@
 
 .materia.es-seleccion .materia__codigo::after {
   content: " · Esta materia";
-  color: #a9d1ff;
+  color: var(--arena-lino);
   font-weight: 600;
 }
 
 /* 2. Prerrequisitos (en color ámbar / dorado) */
 .materia.es-prerreq {
-  outline: 3.5px solid #f59e0b;
+  outline: 3.5px solid var(--arcilla);
   outline-offset: 2px;
   transform: translateY(-2px);
   z-index: 8;
-  box-shadow: 0 8px 20px -4px rgba(245, 158, 11, .6);
+  box-shadow: 0 8px 20px -4px rgba(121, 84, 70, .5);
 }
 
 .materia.es-prerreq .materia__codigo {
-  background: #fef3c7;
-  color: #92400e;
+  background: var(--marfil);
+  color: var(--carbon);
   font-weight: 700;
 }
 
 .materia.es-prerreq .materia__codigo::after {
   content: " · Prerrequisito";
-  color: #b45309;
+  color: var(--arcilla);
   font-weight: 700;
 }
 
-/* 3. Lo que te abre (en color azul brillante / cyan) */
+/* 3. Lo que te abre (en madera cálida / paleta tierra) */
 .materia.es-dependiente {
-  outline: 3.5px solid var(--azul-brillante);
+  outline: 3.5px solid var(--madera);
   outline-offset: 2px;
   transform: translateY(-2px);
   z-index: 8;
-  box-shadow: 0 8px 20px -4px rgba(37, 128, 218, .6);
+  box-shadow: 0 8px 20px -4px rgba(178, 139, 107, .5);
 }
 
 .materia.es-dependiente .materia__codigo {
-  background: #e0f2fe;
-  color: #075985;
+  background: var(--marfil);
+  color: var(--cafe-profundo);
   font-weight: 700;
 }
 
 .materia.es-dependiente .materia__codigo::after {
   content: " · Te abre";
-  color: #0284c7;
+  color: var(--tierra);
   font-weight: 700;
 }
 
@@ -424,9 +424,9 @@
   translate: -50% 0;
   padding: 22px 26px 24px;
   border-radius: 20px;
-  border-top: 8px solid var(--color, var(--azul));
+  border-top: 8px solid var(--color, var(--cafe-profundo));
   background: #fff;
-  box-shadow: 0 -10px 40px -6px rgba(10, 44, 82, .45), 0 0 0 1px rgba(10, 44, 82, .08);
+  box-shadow: 0 -10px 40px -6px rgba(75, 64, 56, .35), 0 0 0 1px rgba(75, 64, 56, .1);
   animation: subir .22s ease-out;
 }
 @keyframes subir {
@@ -537,7 +537,7 @@ body.con-detalle { padding-bottom: 44vh; }
   background: var(--color);
 }
 .ficha-materia:hover { background: #eaf3fd; }
-.ficha-materia--prerreq { border-color: #f59e0b; }
+.ficha-materia--prerreq { border-color: var(--arcilla); }
 .ficha-materia small { color: var(--gris); font-weight: 400; }
 
 .detalle__avance { margin: 8px 0 0; padding-left: 18px; font-size: 15px; color: var(--tinta-suave); }

@@ -460,7 +460,7 @@
 /* Fila 1: 2 tarjetas de ancho medio (span 6 cada una) */
 .ruta-bento--principal {
   grid-column: span 6;
-  background: linear-gradient(135deg, var(--cafe-profundo) 0%, #362D27 100%);
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--carbon) 100%);
   border-color: var(--madera);
   color: #ffffff;
   box-shadow: 0 6px 18px -6px rgba(75, 64, 56, 0.3);
@@ -578,7 +578,7 @@
 .acreditacion {
   margin-top: 56px;
   padding: 34px 38px;
-  background: linear-gradient(135deg, var(--cafe-profundo) 0%, #3D332D 60%, var(--tierra) 100%);
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, var(--cemento-calido) 60%, var(--tierra) 100%);
   border-radius: 24px;
   border: 1.5px solid var(--madera);
   border-left: 8px solid var(--arena);
@@ -809,7 +809,7 @@
 
 .grupos {
   padding: 80px 0 90px;
-  background: linear-gradient(180deg, var(--cafe-profundo) 0%, #362D27 100%);
+  background: linear-gradient(180deg, var(--cafe-profundo) 0%, var(--carbon) 100%);
   color: #ffffff;
   position: relative;
   isolation: isolate;
@@ -1133,5 +1133,306 @@
 
   .representacion-destacada {
     padding: 26px 20px;
+  }
+}
+\n
+/* =========================================================
+   EL PLANO QUE SE CONSTRUYE — ESTILOS ARQUITECTÓNICOS Y DE EDIFICACIÓN
+   1. Retícula de Dibujo Técnico y Blueprint Canvas
+   2. Miras y Esquineros de Plano (CAD Crosshairs)
+   3. Cota de Replanteo en Portada
+   4. Ejes Estructurales de Replanteo (Cotas de Nivel)
+   5. Sistema de Animación de Construcción y Montaje en Scroll
+   6. Medidor de Cota y Elevación Flotante (Elevation Tracker)
+   ========================================================= */
+
+/* 1. Retícula de Dibujo Técnico */
+body[data-pagina="inicio"] {
+  background-color: var(--papel);
+  background-image: 
+    linear-gradient(to right, rgba(125, 118, 96, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125, 118, 96, 0.08) 1px, transparent 1px),
+    linear-gradient(to right, rgba(125, 118, 96, 0.025) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(125, 118, 96, 0.025) 1px, transparent 1px);
+  background-size: 80px 80px, 80px 80px, 16px 16px, 16px 16px;
+  background-position: center top;
+}
+
+/* 2. Miras y Esquineros de Plano */
+.plano-marco {
+  position: relative;
+}
+
+.mira-plano {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  z-index: 5;
+  opacity: 0.65;
+  transition: opacity 0.3s ease;
+}
+
+.mira-plano::before,
+.mira-plano::after {
+  content: '';
+  position: absolute;
+  background: var(--cemento-calido);
+}
+
+.mira-plano::before {
+  top: 10px;
+  left: 0;
+  width: 22px;
+  height: 2px;
+}
+
+.mira-plano::after {
+  top: 0;
+  left: 10px;
+  width: 2px;
+  height: 22px;
+}
+
+.mira-plano--tl { top: -11px; left: -11px; }
+.mira-plano--tr { top: -11px; right: -11px; }
+.mira-plano--bl { bottom: -11px; left: -11px; }
+.mira-plano--br { bottom: -11px; right: -11px; }
+
+/* Esquineros en tarjetas (Plano Bloque) */
+.plano-bloque {
+  position: relative;
+}
+
+.plano-bloque::before,
+.plano-bloque::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  pointer-events: none;
+  z-index: 3;
+  opacity: 0.55;
+  transition: all 0.25s ease;
+}
+
+.plano-bloque::before {
+  top: 7px;
+  left: 7px;
+  border-top: 2px solid var(--cemento-calido);
+  border-left: 2px solid var(--cemento-calido);
+}
+
+.plano-bloque::after {
+  bottom: 7px;
+  right: 7px;
+  border-bottom: 2px solid var(--cemento-calido);
+  border-right: 2px solid var(--cemento-calido);
+}
+
+.plano-bloque:hover::before,
+.plano-bloque:hover::after {
+  border-color: var(--arcilla);
+  opacity: 1;
+  width: 18px;
+  height: 18px;
+}
+
+/* 3. Cota de replanteo en Portada */
+.portada__escala-tecnica {
+  width: 100%;
+  margin-top: 36px;
+  padding-top: 20px;
+  border-top: 1.5px dashed var(--linea);
+}
+
+.cota-replanteo-portada {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.cota-replanteo-portada__linea {
+  flex: 1;
+  height: 1.5px;
+  background: repeating-linear-gradient(90deg, var(--cemento-calido), var(--cemento-calido) 8px, transparent 8px, transparent 14px);
+  position: relative;
+}
+
+.cota-replanteo-portada__linea::before,
+.cota-replanteo-portada__linea::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  width: 1.5px;
+  height: 10px;
+  background: var(--cemento-calido);
+}
+
+.cota-replanteo-portada__linea:first-child::before { left: 0; }
+.cota-replanteo-portada__linea:first-child::after { right: 0; }
+.cota-replanteo-portada__linea:last-child::before { left: 0; }
+.cota-replanteo-portada__linea:last-child::after { right: 0; }
+
+.cota-replanteo-portada__texto {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cemento-calido);
+  white-space: nowrap;
+}
+
+/* 4. Ejes Estructurales de Replanteo en Secciones */
+.cota-eje {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.cota-eje__marca {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid var(--arcilla);
+  background: var(--marfil);
+  color: var(--carbon);
+  font-family: var(--letra-titulo);
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(51, 54, 59, 0.12);
+  transform: scale(0.6);
+  opacity: 0;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+}
+
+.cota-eje__linea {
+  flex: 1;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--cemento-calido), var(--cemento-calido) 10px, transparent 10px, transparent 16px);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.75s cubic-bezier(0.16, 1, 0.3, 1) 0.1s;
+}
+
+.cota-eje__nivel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 14px;
+  border-radius: 999px;
+  background: var(--arena-lino);
+  border: 1px solid var(--cemento-calido);
+  color: var(--carbon);
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  flex-shrink: 0;
+  transform: translateY(6px);
+  opacity: 0;
+  transition: all 0.4s ease 0.2s;
+}
+
+.cota-eje--oscuro .cota-eje__marca {
+  border-color: var(--arena-lino);
+  background: var(--carbon);
+  color: #ffffff;
+}
+
+.cota-eje--oscuro .cota-eje__linea {
+  background: repeating-linear-gradient(90deg, rgba(228, 220, 199, 0.3), rgba(228, 220, 199, 0.3) 10px, transparent 10px, transparent 16px);
+}
+
+.cota-eje--oscuro .cota-eje__nivel {
+  background: rgba(228, 220, 199, 0.15);
+  border-color: rgba(228, 220, 199, 0.3);
+  color: #ffffff;
+}
+
+/* 5. Sistema de Animación "El Plano que se Construye" */
+.plano-construir {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.65s cubic-bezier(0.16, 1, 0.3, 1), transform 0.65s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: opacity, transform;
+}
+
+.plano-construido {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.plano-construido .cota-eje__marca {
+  transform: scale(1);
+  opacity: 1;
+}
+
+.plano-construido .cota-eje__linea {
+  transform: scaleX(1);
+}
+
+.plano-construido .cota-eje__nivel {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Retardo de montaje secuencial para elementos prefabricados */
+.rutas__bento .ruta-bento:nth-child(1) { transition-delay: 0.05s; }
+.rutas__bento .ruta-bento:nth-child(2) { transition-delay: 0.12s; }
+.rutas__bento .ruta-bento:nth-child(3) { transition-delay: 0.19s; }
+.rutas__bento .ruta-bento:nth-child(4) { transition-delay: 0.26s; }
+.rutas__bento .ruta-bento:nth-child(5) { transition-delay: 0.33s; }
+
+.perfil__rejilla-profesional .rasgo-profesional:nth-child(1) { transition-delay: 0.06s; }
+.perfil__rejilla-profesional .rasgo-profesional:nth-child(2) { transition-delay: 0.14s; }
+.perfil__rejilla-profesional .rasgo-profesional:nth-child(3) { transition-delay: 0.22s; }
+.perfil__rejilla-profesional .rasgo-profesional:nth-child(4) { transition-delay: 0.30s; }
+
+.semilleros-grid .grupo-card:nth-child(1) { transition-delay: 0.08s; }
+.semilleros-grid .grupo-card:nth-child(2) { transition-delay: 0.18s; }
+.semilleros-grid .grupo-card:nth-child(3) { transition-delay: 0.28s; }
+
+/* Cota inferior de rasgo profesional animada */
+.rasgo-profesional .rasgo-profesional__cota-linea {
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.25s;
+}
+
+.rasgo-profesional.plano-construido .rasgo-profesional__cota-linea {
+  transform: scaleX(1);
+}
+
+
+
+/* Reducción de movimiento */
+@media (prefers-reduced-motion: reduce) {
+  .plano-construir {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  .cota-eje__linea {
+    transform: none !important;
+    transition: none !important;
+  }
+  .cota-eje__marca,
+  .cota-eje__nivel {
+    transform: none !important;
+    opacity: 1 !important;
+    transition: none !important;
+  }
+  .rasgo-profesional .rasgo-profesional__cota-linea {
+    transform: none !important;
+    transition: none !important;
   }
 }

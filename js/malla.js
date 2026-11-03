@@ -69,8 +69,8 @@ function pintarLeyenda() {
     .join('');
   $('#leyenda').innerHTML = `
     ${componentes}
-    <li><span class="leyenda__aro" style="--color: #f59e0b"></span>Prerrequisito (te pide)</li>
-    <li><span class="leyenda__aro" style="--color: var(--turquesa)"></span>Te abre (se abre después)</li>`;
+    <li><span class="leyenda__aro" style="--color: var(--arcilla)"></span>Prerrequisito (te pide)</li>
+    <li><span class="leyenda__aro" style="--color: var(--cemento-calido)"></span>Te abre (se abre después)</li>`;
 }
 
 

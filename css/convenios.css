@@ -93,8 +93,8 @@
 .item {
   border-radius: 20px;
   border: 1.5px solid var(--linea);
-  border-left: 6px solid var(--tierra);
-  background: #ffffff;
+  border-left: 6px solid var(--arcilla);
+  background: var(--marfil);
   box-shadow: 0 4px 18px -4px rgba(75, 64, 56, .08);
   overflow: hidden;
   transition: all .2s ease;
@@ -217,7 +217,7 @@
 .item__panel {
   padding: 4px 28px 30px 28px;
   border-top: 1px solid var(--linea);
-  background: #ffffff;
+  background: var(--marfil);
   animation: aparecer .2s ease-out both;
 }
 .item__panel .cargando { padding: 24px 0; }
@@ -328,7 +328,7 @@
   padding: 16px 20px;
   border: 1.5px solid var(--madera);
   border-radius: 16px;
-  background: rgba(178, 139, 107, 0.12);
+  background: rgba(125, 118, 96, 0.12);
 }
 .item .por-confirmar h4 { color: var(--tierra); }
 .item .por-confirmar ul { color: var(--cafe-profundo); }

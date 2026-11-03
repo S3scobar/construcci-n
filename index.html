@@ -16,9 +16,15 @@
 
   <div id="barra"></div>
 
-  <!-- PORTADA -->
-  <section class="portada foto foto--entrada">
-    <div class="contenedor portada__contenido">
+<!-- PORTADA -->
+  <section class="portada foto foto--entrada" id="inicio">
+    <div class="contenedor portada__contenido plano-marco">
+      <!-- MARCADORES DE PLANO ARQUITECTÓNICO -->
+      <span class="mira-plano mira-plano--tl" aria-hidden="true"></span>
+      <span class="mira-plano mira-plano--tr" aria-hidden="true"></span>
+      <span class="mira-plano mira-plano--bl" aria-hidden="true"></span>
+      <span class="mira-plano mira-plano--br" aria-hidden="true"></span>
+
       <div class="portada__logo-wrap">
         <img class="portada__logo" src="img/logo-construccion.svg" alt="Logo de Construcción · Facultad de Arquitectura" width="130" height="130">
       </div>
@@ -40,6 +46,14 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18" aria-hidden="true"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
           <span>Ficha del Proyecto</span>
         </a>
+      </div>
+
+      <div class="portada__escala-tecnica" aria-hidden="true">
+        <div class="cota-replanteo-portada">
+          <span class="cota-replanteo-portada__linea"></span>
+          <span class="cota-replanteo-portada__texto">PLANO GENERAL ARQ-001 · PROYECTO PREGRADO EN CONSTRUCCIÓN · N.P.T. ±0.00m</span>
+          <span class="cota-replanteo-portada__linea"></span>
+        </div>
       </div>
     </div>
   </section>

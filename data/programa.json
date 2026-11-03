@@ -15,7 +15,7 @@
       "nombre": "Construcción de Obra Compleja e Infraestructura",
       "descripcion": "Profundización en el comportamiento mecánico de materiales, sistemas estructurales y procesos de ejecución en obras de infraestructura pública y vial con máxima eficiencia y seguridad.",
       "icono": "suelos",
-      "color": "#805B46",
+      "color": "#795446",
       "codigo": "TRAYECTORIA · 01",
       "subtitulo": "Sistemas estructurales y obras civiles mayores",
       "tags": [
@@ -30,7 +30,7 @@
       "nombre": "Gestión de la Construcción, Innovación y Empresa",
       "descripcion": "Administración, control de costos, contratación, programación avanzada e interventoría a lo largo del ciclo de vida del proyecto de construcción.",
       "icono": "gestion",
-      "color": "#4B4038",
+      "color": "#33363B",
       "codigo": "TRAYECTORIA · 02",
       "subtitulo": "Gerencia, tecnología BIM y control integral",
       "tags": [
@@ -45,7 +45,7 @@
       "nombre": "Diseño de Materiales y Procesos",
       "descripcion": "Conocimiento profundo sobre fabricación, modificación, modelamiento numérico y desarrollo experimental de materiales (acero, madera, tierra, conglomerantes).",
       "icono": "ciencia",
-      "color": "#B28B6B",
+      "color": "#7D7660",
       "codigo": "TRAYECTORIA · 03",
       "subtitulo": "Ciencia experimental y tecnología de materiales",
       "tags": [
@@ -60,7 +60,7 @@
       "nombre": "Hábitat y Gestión del Territorio",
       "descripcion": "Conjunción del ejercicio de la construcción con el contexto normativo, urbanístico y social para la lectura de procesos de gestión territorial e intervención del hábitat.",
       "icono": "hidrico",
-      "color": "#65715B",
+      "color": "#94914E",
       "codigo": "TRAYECTORIA · 04",
       "subtitulo": "Urbanismo, políticas de hábitat y territorio",
       "tags": [
