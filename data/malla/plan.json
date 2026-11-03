@@ -1,0 +1,120 @@
+[
+  {
+    "semestre": 1,
+    "creditos": 20,
+    "items": [
+      { "tipo": "asignatura", "codigo": "1000004-M" },
+      { "tipo": "asignatura", "codigo": "1000008-M" },
+      { "tipo": "asignatura", "codigo": "3010345" },
+      { "tipo": "asignatura", "codigo": "3006605" },
+      { "tipo": "asignatura", "codigo": "3010319" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 1, "nombre": "Libre Elección / Inducción" }
+    ]
+  },
+  {
+    "semestre": 2,
+    "creditos": 20,
+    "items": [
+      { "tipo": "asignatura", "codigo": "1000019-M" },
+      { "tipo": "asignatura", "codigo": "3007380" },
+      { "tipo": "asignatura", "codigo": "3010346" },
+      { "tipo": "asignatura", "codigo": "3006745" },
+      { "tipo": "asignatura", "codigo": "3010283" },
+      { "tipo": "asignatura", "codigo": "3006739" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 2, "nombre": "Idioma I" }
+    ]
+  },
+  {
+    "semestre": 3,
+    "creditos": 21,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006712" },
+      { "tipo": "asignatura", "codigo": "3007401" },
+      { "tipo": "asignatura", "codigo": "3010347" },
+      { "tipo": "asignatura", "codigo": "3006746" },
+      { "tipo": "asignatura", "codigo": "3006719" },
+      { "tipo": "asignatura", "codigo": "3006741" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 3, "nombre": "Idioma II" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 2, "nombre": "Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 4,
+    "creditos": 20,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006713" },
+      { "tipo": "asignatura", "codigo": "3006740" },
+      { "tipo": "asignatura", "codigo": "3006760" },
+      { "tipo": "asignatura", "codigo": "3006772" },
+      { "tipo": "asignatura", "codigo": "3006720" },
+      { "tipo": "asignatura", "codigo": "3006780" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 2, "nombre": "Idioma III" }
+    ]
+  },
+  {
+    "semestre": 5,
+    "creditos": 18,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006762" },
+      { "tipo": "asignatura", "codigo": "3006773" },
+      { "tipo": "asignatura", "codigo": "3006722" },
+      { "tipo": "asignatura", "codigo": "3006781" },
+      { "tipo": "bolsa", "agrupacion": "optativas-fundamentacion", "creditos": 4, "nombre": "Optativa Fundamentación" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 3, "nombre": "Idioma IV / Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 6,
+    "creditos": 16,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006732" },
+      { "tipo": "asignatura", "codigo": "3006774" },
+      { "tipo": "asignatura", "codigo": "3006723" },
+      { "tipo": "asignatura", "codigo": "3006782" },
+      { "tipo": "bolsa", "agrupacion": "optativas-disciplinares", "creditos": 2, "nombre": "Optativa Disciplinar" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 3, "nombre": "Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 7,
+    "creditos": 16,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006729" },
+      { "tipo": "asignatura", "codigo": "3006775" },
+      { "tipo": "asignatura", "codigo": "3006724" },
+      { "tipo": "asignatura", "codigo": "3010220" },
+      { "tipo": "bolsa", "agrupacion": "optativas-fundamentacion", "creditos": 2, "nombre": "Optativa Fundamentación" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 3, "nombre": "Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 8,
+    "creditos": 12,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006768" },
+      { "tipo": "asignatura", "codigo": "3006743" },
+      { "tipo": "asignatura", "codigo": "3006787" },
+      { "tipo": "bolsa", "agrupacion": "optativas-disciplinares", "creditos": 3, "nombre": "Optativa Disciplinar" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 2, "nombre": "Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 9,
+    "creditos": 17,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3010221" },
+      { "tipo": "bolsa", "agrupacion": "optativas-fundamentacion", "creditos": 4, "nombre": "Optativa Fundamentación" },
+      { "tipo": "bolsa", "agrupacion": "optativas-disciplinares", "creditos": 8, "nombre": "Optativas Disciplinares / Énfasis" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 3, "nombre": "Libre Elección" }
+    ]
+  },
+  {
+    "semestre": 10,
+    "creditos": 20,
+    "items": [
+      { "tipo": "asignatura", "codigo": "3006715" },
+      { "tipo": "bolsa", "agrupacion": "optativas-disciplinares", "creditos": 9, "nombre": "Optativas Disciplinares / Rutas" },
+      { "tipo": "bolsa", "agrupacion": "libre-eleccion-idiomas", "creditos": 5, "nombre": "Libre Elección" }
+    ]
+  }
+]

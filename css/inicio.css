@@ -1,0 +1,1137 @@
+/* =========================================================
+   CONSTRUCCIÓN · FACULTAD DE ARQUITECTURA · UNAL MEDELLÍN
+   ESTILOS INICIO — IDENTIDAD ARQUITECTÓNICA, INGENIERIL Y EDIFICACIÓN
+   1. Cajetines de proyecto y encabezados
+   2. Tablero de obra (visión, pilares y ficha técnica)
+   3. Rutas curriculares de especialización
+   4. Acreditación de calidad
+   5. Perfil del arquitecto(a) constructor(a)
+   6. Comunidad, representación estudiantil y semilleros
+   7. Adaptación móvil y responsive
+   ========================================================= */
+
+
+/* ---------- 1. Cajetines de Proyecto y Encabezados ---------- */
+
+.cajetin-proyecto {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 12px 18px;
+  padding: 8px 22px;
+  border-radius: 999px;
+  background: var(--marfil);
+  border: 1px solid var(--madera);
+  font-family: var(--letra-universidad);
+  font-size: 11.5px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--cafe-profundo);
+  margin-bottom: 14px;
+  box-shadow: 0 4px 14px -4px rgba(75, 64, 56, 0.15);
+}
+
+.cajetin-proyecto strong {
+  color: var(--tierra);
+}
+
+.cajetin-proyecto--sub {
+  background: rgba(128, 91, 70, 0.08);
+  border-color: rgba(178, 139, 107, 0.5);
+  font-size: 11px;
+}
+
+
+/* ---------- 2. Tablero de Obra (Visión y Ficha Técnica) ---------- */
+
+.tablero-obra {
+  display: grid;
+  grid-template-columns: 1.25fr 0.95fr;
+  gap: 32px;
+  align-items: stretch;
+  margin-top: 10px;
+}
+
+/* Columna Izquierda: Visión e Identidad */
+.tablero-obra__col-identidad {
+  display: flex;
+}
+
+.tablero-obra__tarjeta-vision {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 32px 34px;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1px solid var(--linea);
+  border-left: 6px solid var(--tierra);
+  box-shadow: 0 16px 36px -12px rgba(75, 64, 56, 0.12);
+  width: 100%;
+}
+
+.tablero-obra__badge-arquitectura {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 16px;
+  border-radius: 999px;
+  background: rgba(128, 91, 70, 0.08);
+  border: 1px solid rgba(178, 139, 107, 0.4);
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--tierra);
+  font-weight: 700;
+  align-self: flex-start;
+}
+
+.tablero-obra__parrafos {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--tinta);
+}
+
+/* 4 Pilares de Formación */
+.pilares-formacion {
+  margin-top: 10px;
+  padding-top: 20px;
+  border-top: 1px dashed var(--linea);
+}
+
+.pilares-formacion__titulo {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  color: var(--gris);
+  margin-bottom: 16px;
+}
+
+.pilares-formacion__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+}
+
+.pilar-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+}
+
+.pilar-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--madera);
+  box-shadow: 0 8px 20px -6px rgba(75, 64, 56, 0.15);
+}
+
+.pilar-card__icono {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: var(--cafe-profundo);
+  color: var(--arena);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px -2px rgba(75, 64, 56, 0.35);
+}
+
+.pilar-card__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.pilar-card__info strong {
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--cafe-profundo);
+  line-height: 1.3;
+}
+
+.pilar-card__info span {
+  font-size: 12px;
+  color: var(--gris);
+  line-height: 1.4;
+}
+
+/* Columna Derecha: Matriz de Especificaciones */
+.tablero-obra__col-ficha {
+  display: flex;
+}
+
+.ficha-especificaciones {
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  background: #ffffff;
+  border: 1.5px solid var(--madera);
+  box-shadow: 0 16px 36px -12px rgba(75, 64, 56, 0.12);
+  overflow: hidden;
+  width: 100%;
+}
+
+.ficha-especificaciones__cabecera {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 24px;
+  background: var(--cafe-profundo);
+  color: #ffffff;
+  border-bottom: 2px solid var(--tierra);
+}
+
+.ficha-especificaciones__cabecera h3 {
+  font-family: var(--letra-titulo);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: .02em;
+  color: var(--marfil);
+}
+
+.ficha-especificaciones__cabecera svg {
+  color: var(--arena);
+}
+
+.ficha-especificaciones__lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.ficha-especificaciones__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 13px 22px;
+  border-bottom: 1px solid var(--linea);
+  font-size: 13.5px;
+}
+
+.ficha-especificaciones__item:last-child {
+  border-bottom: none;
+}
+
+.ficha-especificaciones__item:nth-child(even) {
+  background: var(--papel);
+}
+
+.ficha-especificaciones__clave {
+  font-family: var(--letra-universidad);
+  font-size: 11.5px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  color: var(--gris);
+  font-weight: 600;
+  flex-shrink: 0;
+}
+
+.ficha-especificaciones__valor {
+  text-align: right;
+  font-weight: 700;
+  color: var(--cafe-profundo);
+  word-break: break-word;
+}
+
+
+/* ---------- 3. Rutas Curriculares de Especialización ---------- */
+
+.rutas-curriculares {
+  margin-top: 56px;
+  padding-top: 44px;
+  border-top: 2px dashed var(--linea);
+}
+
+.seccion-titulo--rutas {
+  margin-bottom: 22px;
+}
+
+.rutas__titulo {
+  font-family: var(--letra-titulo);
+  font-size: clamp(22px, 2.6vw, 28px);
+  color: var(--cafe-profundo);
+  letter-spacing: -.02em;
+  margin: 0 0 6px;
+  font-weight: 700;
+}
+
+/* =========================================================
+   CINCO RUTAS CURRICULARES DE ÉNFASIS — BENTO COMPACTO
+   (Matriz y Planos Técnicos, Cajas Reducidas Sin Franja)
+   ========================================================= */
+
+.rutas__bento {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 14px;
+}
+
+/* Base de la tarjeta Bento: Más compacta, sin franja superior */
+.ruta-bento {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 16px 18px 14px;
+  border-radius: 16px;
+  border: 1.5px solid var(--linea);
+  background: #ffffff;
+  overflow: hidden;
+  box-shadow: 0 4px 14px -6px rgba(75, 64, 56, 0.08);
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+}
+
+.ruta-bento:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 22px -8px rgba(75, 64, 56, 0.16);
+}
+
+/* Marca de agua pequeña y discreta en la esquina */
+.ruta-bento__watermark {
+  position: absolute;
+  right: 12px;
+  top: 6px;
+  font-family: var(--letra-titulo);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  color: rgba(75, 64, 56, 0.05);
+  pointer-events: none;
+  user-select: none;
+}
+
+.ruta-bento:hover .ruta-bento__watermark {
+  color: rgba(75, 64, 56, 0.08);
+}
+
+/* Cabecera compacta */
+.ruta-bento__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  margin-bottom: 8px;
+}
+
+.ruta-bento__badge {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 999px;
+  background: var(--marfil);
+  border: 1px solid var(--arena);
+  font-family: var(--letra-universidad);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--cafe-profundo);
+}
+
+.ruta-bento__icono {
+  width: 30px;
+  height: 30px;
+  border-radius: 8px;
+  background: var(--marfil);
+  border: 1px solid var(--arena);
+  color: var(--cafe-profundo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all .2s ease;
+}
+
+.ruta-bento:hover .ruta-bento__icono {
+  background: var(--tierra);
+  border-color: var(--madera);
+  color: #ffffff;
+}
+
+/* Contenido de la tarjeta */
+.ruta-bento__nombre {
+  position: relative;
+  z-index: 2;
+  font-family: var(--letra-titulo);
+  font-size: 15.5px;
+  font-weight: 700;
+  line-height: 1.25;
+  color: var(--cafe-profundo);
+  margin-bottom: 4px;
+}
+
+.ruta-bento__descripcion {
+  position: relative;
+  z-index: 2;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--tinta-suave);
+  margin-bottom: 8px;
+  flex: 1;
+}
+
+/* Chips compactos */
+.ruta-bento__tags {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  margin-bottom: 8px;
+}
+
+.ruta-tag {
+  display: inline-block;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+  font-family: var(--letra-universidad);
+  font-size: 9.5px;
+  font-weight: 600;
+  color: var(--cafe-profundo);
+  letter-spacing: .01em;
+  white-space: nowrap;
+}
+
+.ruta-bento:hover .ruta-tag {
+  border-color: var(--madera);
+}
+
+/* Pie compacto con enlace */
+.ruta-bento__pie {
+  position: relative;
+  z-index: 2;
+  padding-top: 8px;
+  border-top: 1px solid var(--linea);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.ruta-bento__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  color: var(--tierra);
+  text-decoration: none;
+  transition: all .15s ease;
+}
+
+.ruta-bento__cta svg {
+  transition: transform .15s ease;
+}
+
+.ruta-bento:hover .ruta-bento__cta {
+  color: var(--cafe-profundo);
+}
+
+.ruta-bento:hover .ruta-bento__cta svg {
+  transform: translateX(3px);
+}
+
+
+/* =========================================================
+   ASIGNACIÓN DE RETÍCULA BENTO Y PERSONALIDADES DE MATERIAL
+   ========================================================= */
+
+/* Fila 1: 2 tarjetas de ancho medio (span 6 cada una) */
+.ruta-bento--principal {
+  grid-column: span 6;
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, #362D27 100%);
+  border-color: var(--madera);
+  color: #ffffff;
+  box-shadow: 0 6px 18px -6px rgba(75, 64, 56, 0.3);
+}
+
+.ruta-bento--principal .ruta-bento__watermark {
+  color: rgba(213, 191, 165, 0.08);
+}
+
+.ruta-bento--principal .ruta-bento__badge {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(213, 191, 165, 0.4);
+  color: var(--marfil);
+}
+
+.ruta-bento--principal .ruta-bento__icono {
+  background: var(--tierra);
+  border-color: var(--madera);
+  color: #ffffff;
+}
+
+.ruta-bento--principal .ruta-bento__nombre {
+  color: #ffffff;
+}
+
+.ruta-bento--principal .ruta-bento__descripcion {
+  color: var(--marfil);
+}
+
+.ruta-bento--principal .ruta-tag {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(213, 191, 165, 0.3);
+  color: #ffffff;
+}
+
+.ruta-bento--principal:hover .ruta-tag {
+  background: rgba(255, 255, 255, 0.16);
+  border-color: var(--arena);
+}
+
+.ruta-bento--principal .ruta-bento__pie {
+  border-top-color: rgba(213, 191, 165, 0.2);
+}
+
+.ruta-bento--principal .ruta-bento__cta {
+  color: var(--arena);
+}
+
+.ruta-bento--principal:hover .ruta-bento__cta {
+  color: #ffffff;
+}
+
+
+/* Fila 1: Gestión de la Construcción & BIM (span 6) */
+.ruta-bento--gestion {
+  grid-column: span 6;
+  background: var(--marfil);
+  border-color: var(--madera);
+}
+
+.ruta-bento--gestion .ruta-bento__badge {
+  background: #ffffff;
+}
+
+
+/* Fila 2: 3 tarjetas compactas (span 4 cada una) */
+.ruta-bento--materiales {
+  grid-column: span 4;
+  background: #ffffff;
+  border-color: var(--gris-cemento);
+}
+
+.ruta-bento--habitat {
+  grid-column: span 4;
+  background: #ffffff;
+  border-color: var(--arena);
+}
+
+.ruta-bento--sostenible {
+  grid-column: span 4;
+  background: #ffffff;
+  border-color: var(--oliva);
+}
+
+.ruta-bento--sostenible .ruta-bento__icono {
+  color: var(--oliva);
+}
+
+.ruta-bento--sostenible:hover .ruta-bento__icono {
+  background: var(--oliva);
+  border-color: var(--oliva);
+  color: #ffffff;
+}
+
+
+/* Adaptabilidad Responsiva */
+@media (max-width: 900px) {
+  .ruta-bento--principal,
+  .ruta-bento--gestion,
+  .ruta-bento--materiales,
+  .ruta-bento--habitat,
+  .ruta-bento--sostenible {
+    grid-column: span 12;
+  }
+}
+
+@media (max-width: 600px) {
+  .ruta-bento { padding: 14px 16px 12px; }
+  .ruta-bento__nombre { font-size: 15px; }
+}
+
+
+/* ---------- 4. Certificación y Acreditación de Calidad ---------- */
+
+.acreditacion {
+  margin-top: 56px;
+  padding: 34px 38px;
+  background: linear-gradient(135deg, var(--cafe-profundo) 0%, #3D332D 60%, var(--tierra) 100%);
+  border-radius: 24px;
+  border: 1.5px solid var(--madera);
+  border-left: 8px solid var(--arena);
+  box-shadow: 0 18px 40px -12px rgba(45, 30, 20, 0.45);
+  color: #ffffff;
+}
+
+.acreditacion__cabecera {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 28px;
+}
+
+.acreditacion__sello-icono {
+  width: 58px;
+  height: 58px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1.5px solid var(--arena);
+  color: var(--arena);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.acreditacion__sello-icono svg {
+  width: 30px;
+  height: 30px;
+}
+
+.acreditacion__antetitulo {
+  display: block;
+  font-family: var(--letra-universidad);
+  font-size: 11.5px;
+  letter-spacing: .16em;
+  text-transform: uppercase;
+  color: var(--arena);
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.acreditacion__estado {
+  font-family: var(--letra-titulo);
+  font-size: clamp(20px, 2.8vw, 28px);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.acreditacion__rejilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+.acreditacion__tarjeta {
+  padding: 22px 24px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(213, 191, 165, 0.3);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.acreditacion__tarjeta--renovacion {
+  border-color: var(--arena);
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.acreditacion__tarjeta-encabezado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.acreditacion__anio-badge {
+  font-family: var(--letra-titulo);
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--arena);
+}
+
+.acreditacion__hito-tipo {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--marfil);
+  opacity: 0.9;
+}
+
+.acreditacion__texto {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--marfil);
+}
+
+.acreditacion__pie {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 24px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(213, 191, 165, 0.25);
+  font-size: 13px;
+  color: var(--marfil);
+}
+
+.acreditacion__info-icono {
+  width: 18px;
+  height: 18px;
+  color: var(--arena);
+  flex-shrink: 0;
+}
+
+
+/* ---------- 5. Perfil del Arquitecto(a) Constructor(a) ---------- */
+
+.perfil__rejilla-profesional {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+  margin-top: 32px;
+}
+
+.rasgo-profesional {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px 24px;
+  background: #ffffff;
+  border-radius: 20px;
+  border: 1.5px solid var(--linea);
+  box-shadow: 0 8px 24px -10px rgba(75, 64, 56, 0.08);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+
+.rasgo-profesional:hover {
+  transform: translateY(-5px);
+  border-color: var(--madera);
+  box-shadow: 0 18px 36px -10px rgba(75, 64, 56, 0.16);
+}
+
+.rasgo-profesional__cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.rasgo-profesional__tag {
+  font-family: var(--letra-universidad);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--madera);
+  background: rgba(178, 139, 107, 0.1);
+  padding: 4px 10px;
+  border-radius: 6px;
+}
+
+.rasgo-profesional__icono {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: var(--cafe-profundo);
+  color: var(--arena);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  box-shadow: 0 4px 10px -2px rgba(75, 64, 56, 0.3);
+}
+
+.rasgo-profesional__titulo {
+  font-family: var(--letra-titulo);
+  font-size: 19px;
+  font-weight: 700;
+  color: var(--cafe-profundo);
+  line-height: 1.3;
+  margin-bottom: 10px;
+}
+
+.rasgo-profesional__texto {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--tinta-suave);
+  flex: 1;
+}
+
+.rasgo-profesional__cota {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px dashed var(--linea);
+}
+
+.rasgo-profesional__cota-linea {
+  height: 2px;
+  background: var(--madera);
+  flex: 1;
+  opacity: 0.6;
+}
+
+.rasgo-profesional__cota-punto {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--tierra);
+}
+
+.perfil__fuente {
+  margin-top: 36px;
+  font-size: 13px;
+  color: var(--gris);
+  text-align: center;
+  font-family: var(--letra-universidad);
+}
+
+
+/* ---------- 6. Comunidad, Representación y Semilleros ---------- */
+
+.grupos {
+  padding: 80px 0 90px;
+  background: linear-gradient(180deg, var(--cafe-profundo) 0%, #362D27 100%);
+  color: #ffffff;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+
+/* Retícula estructural sutil de fondo */
+.grupos::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(rgba(213, 191, 165, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(213, 191, 165, 0.05) 1px, transparent 1px);
+  background-size: 32px 32px;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.seccion-titulo--comunidad h2,
+.seccion-titulo--comunidad p {
+  color: #ffffff;
+}
+
+.seccion-titulo--comunidad .seccion-titulo__intro {
+  color: var(--marfil);
+}
+
+/* Tarjeta Destacada: Representación Estudiantil */
+.representacion-destacada {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  padding: 34px 38px;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.07);
+  backdrop-filter: blur(12px);
+  border: 1.5px solid var(--madera);
+  border-left: 8px solid var(--arena);
+  box-shadow: 0 16px 36px -10px rgba(0, 0, 0, 0.45);
+  margin-bottom: 40px;
+}
+
+.representacion-destacada__insignia {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #ffffff;
+  padding: 6px;
+  border: 3px solid var(--madera);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.representacion-destacada__logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.representacion-destacada__cuerpo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.representacion-destacada__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 12px;
+}
+
+.badge-oficial {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--arena);
+  background: rgba(213, 191, 165, 0.16);
+  padding: 4px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(213, 191, 165, 0.35);
+}
+
+.badge-periodo {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--marfil);
+  opacity: 0.85;
+  padding: 4px 0;
+}
+
+.representacion-destacada__nombre {
+  font-family: var(--letra-titulo);
+  font-size: clamp(22px, 3vw, 28px);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 2px 0;
+}
+
+.representacion-destacada__desc {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--marfil);
+}
+
+.representacion-destacada__canales {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-top: 8px;
+}
+
+.canal-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 999px;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.canal-btn--wpp {
+  background: #25D366;
+  color: #0b341c;
+  box-shadow: 0 4px 16px rgba(37, 211, 102, 0.35);
+}
+
+.canal-btn--wpp:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(37, 211, 102, 0.5);
+}
+
+.canal-btn--ig {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border: 1.5px solid var(--madera);
+}
+
+.canal-btn--ig:hover {
+  transform: translateY(-2px);
+  background: var(--madera);
+  border-color: var(--arena);
+}
+
+/* Grilla de Semilleros y Grupos de Investigación */
+.semilleros-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.grupo-card {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 24px 22px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(213, 191, 165, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 12px 28px -10px rgba(0, 0, 0, 0.4);
+  transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
+}
+
+.grupo-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--arena);
+  box-shadow: 0 20px 44px -8px rgba(0, 0, 0, 0.55);
+}
+
+.grupo-card__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.grupo-card__emblema {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: var(--color-grupo, var(--tierra));
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.35);
+}
+
+.grupo-card__titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.grupo-card__tipo {
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--arena);
+  font-weight: 700;
+}
+
+.grupo-card__nombre {
+  font-family: var(--letra-titulo);
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+}
+
+.grupo-card__descripcion {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--marfil);
+  flex: 1;
+}
+
+.grupo-card__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(213, 191, 165, 0.15);
+}
+
+.grupo-card__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .04em;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: all .2s ease;
+}
+
+.grupo-card__btn--correo {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--arena);
+  border: 1px solid rgba(213, 191, 165, 0.25);
+}
+
+.grupo-card__btn--correo:hover {
+  background: var(--arena);
+  color: var(--cafe-profundo);
+}
+
+.grupo-card__btn--enlace {
+  background: transparent;
+  color: var(--marfil);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.grupo-card__btn--enlace:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+}
+
+.fuentes {
+  margin-top: 40px;
+  font-size: 13px;
+  color: var(--gris);
+  text-align: center;
+  font-family: var(--letra-universidad);
+}
+
+.fuentes a {
+  color: var(--tierra);
+  text-decoration: underline;
+}
+
+
+/* ---------- 7. Adaptación Móvil y Responsive ---------- */
+
+@media (max-width: 960px) {
+  .tablero-obra {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .representacion-destacada {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .representacion-destacada__badges,
+  .representacion-destacada__canales {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .pilares-formacion__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tablero-obra__tarjeta-vision {
+    padding: 24px 20px;
+  }
+
+  .representacion-destacada {
+    padding: 26px 20px;
+  }
+}

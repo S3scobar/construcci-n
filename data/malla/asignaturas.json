@@ -1,0 +1,970 @@
+[
+  {
+    "codigo": "1000004-M",
+    "nombre": "Cálculo Diferencial",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000008-M",
+    "nombre": "Geometría Vectorial y Analítica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010345",
+    "nombre": "Química de los Materiales",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "materiales-de-construccion",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006605",
+    "nombre": "Introducción a la Construcción",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "humanistica",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010319",
+    "nombre": "Representación del Proyecto 1 - CNT",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "representacion-del-proyecto",
+    "semestre": 1,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000019-M",
+    "nombre": "Física Mecánica",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 2,
+    "prerrequisitos": [
+      "1000004-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007380",
+    "nombre": "Geología Aplicada",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 2,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010346",
+    "nombre": "Materiales I",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "materiales-de-construccion",
+    "semestre": 2,
+    "prerrequisitos": [
+      "3010345"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006745",
+    "nombre": "Historia y Teoría",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "humanistica",
+    "semestre": 2,
+    "prerrequisitos": [
+      "3006605"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010283",
+    "nombre": "Representación del Proyecto 2 - CNT",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "representacion-del-proyecto",
+    "semestre": 2,
+    "prerrequisitos": [
+      "3010319"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006739",
+    "nombre": "Construcción I",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 2,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006712",
+    "nombre": "Análisis Estructural I - CNT",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 3,
+    "prerrequisitos": [
+      "1000019-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007401",
+    "nombre": "Topografía",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 3,
+    "prerrequisitos": [
+      "1000008-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010347",
+    "nombre": "Materiales II",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "materiales-de-construccion",
+    "semestre": 3,
+    "prerrequisitos": [
+      "3010346"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006746",
+    "nombre": "Hábitat I",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "humanistica",
+    "semestre": 3,
+    "prerrequisitos": [
+      "3006745"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006719",
+    "nombre": "Representación del Proyecto 3 - CNT",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "representacion-del-proyecto",
+    "semestre": 3,
+    "prerrequisitos": [
+      "3010283"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006741",
+    "nombre": "Construcción II",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 3,
+    "prerrequisitos": [
+      "3006739"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006713",
+    "nombre": "Análisis Estructural II - CNT",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3006712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006740",
+    "nombre": "Fundamentos de Instalaciones Técnicas",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ingenieria-y-ciencias",
+    "semestre": 4,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006760",
+    "nombre": "Materiales III",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "materiales-de-construccion",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3010347"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006772",
+    "nombre": "Hábitat II",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "humanistica",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3006746"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006720",
+    "nombre": "Legislación Laboral y Pública",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 4,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006780",
+    "nombre": "Construcción III",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 4,
+    "prerrequisitos": [
+      "3006741"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006762",
+    "nombre": "Materiales IV",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "materiales-de-construccion",
+    "semestre": 5,
+    "prerrequisitos": [
+      "3006760"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006773",
+    "nombre": "Taller I - CNT",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 5,
+    "prerrequisitos": [
+      "3006772",
+      "3006780"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006722",
+    "nombre": "Programación de Obras I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006781",
+    "nombre": "Construcción IV",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 5,
+    "prerrequisitos": [
+      "3006780"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006732",
+    "nombre": "Patología I",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "patologia",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006762"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006774",
+    "nombre": "Taller II - CNT",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006773"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006723",
+    "nombre": "Costos y Presupuestos I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006722"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006782",
+    "nombre": "Construcción V",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006781"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006729",
+    "nombre": "Patología II (Lesiones)",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "patologia",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006732"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006775",
+    "nombre": "Taller III - CNT",
+    "creditos": 4,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006774"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006724",
+    "nombre": "Controles de Obra I",
+    "creditos": 3,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006723"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010220",
+    "nombre": "Construcción VI",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006782"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006768",
+    "nombre": "Patología III (Técnicas de Intervención)",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "patologia",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3006729"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006743",
+    "nombre": "Sistemas de Gestión",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3006724"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006787",
+    "nombre": "Construcción VII",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "ejecucion-de-obras",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010220"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010221",
+    "nombre": "Gestión Integrada de Proyectos I",
+    "creditos": 2,
+    "obligatoria": true,
+    "agrupacion": "gestion-de-la-construccion",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3006787",
+      "3006743"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006715",
+    "nombre": "Trabajo de Grado",
+    "creditos": 6,
+    "obligatoria": true,
+    "agrupacion": "trabajo-de-grado",
+    "semestre": 10,
+    "prerrequisitos": [
+      "3010221"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000005-M",
+    "nombre": "Cálculo Integral",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [
+      "1000004-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "1000007-M",
+    "nombre": "Ecuaciones Diferenciales",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [
+      "1000005-M"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010447",
+    "nombre": "Métodos Numéricos Aplicados a Materiales y Procesos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010449",
+    "nombre": "Mecánica de Suelos",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3007380"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010911",
+    "nombre": "Seminario de Investigación I",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010425",
+    "nombre": "Teoría Administrativa y Organizacional",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010403",
+    "nombre": "Derecho para la Administración",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010914",
+    "nombre": "Fundamentos de Programación",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010435",
+    "nombre": "Técnicas Estadísticas en la Construcción",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010910",
+    "nombre": "Técnicas Matemáticas",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010913",
+    "nombre": "Materiales V",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006762"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006601",
+    "nombre": "Urbanística I",
+    "creditos": 2,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006600",
+    "nombre": "Historia y Teoría I",
+    "creditos": 2,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 5,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010187",
+    "nombre": "Ciudad y Ambiente",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006678",
+    "nombre": "Urbanística II",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006601"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006627",
+    "nombre": "Etnografía de la Ciudad",
+    "creditos": 2,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010710",
+    "nombre": "Construcción Sostenible",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009552",
+    "nombre": "Énfasis II: Paisaje y Espacios Verdes",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006721",
+    "nombre": "Iluminación",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-fundamentacion",
+    "semestre": 6,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007416",
+    "nombre": "Mecánica de Materiales",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 6,
+    "prerrequisitos": [
+      "3006712"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006725",
+    "nombre": "Pavimentos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010449"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3007571",
+    "nombre": "Construcción VIII",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3006787"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006776",
+    "nombre": "Maquinaria para la Construcción de Carreteras",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010912",
+    "nombre": "Seminario de Investigación II",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010911"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010500",
+    "nombre": "Gestión del Talento Humano",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009010",
+    "nombre": "Planes de Negocio",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010510",
+    "nombre": "Control de Costos",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006723"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009054",
+    "nombre": "Contratación",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3006720"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009041",
+    "nombre": "Programación de Obras II",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006722"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009042",
+    "nombre": "Interventoría",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009039",
+    "nombre": "Gerencia de Proyectos Inmobiliarios",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009045",
+    "nombre": "Valoración Inmobiliaria",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010908",
+    "nombre": "Modelamiento de Procesos I",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010909",
+    "nombre": "Modelamiento de Procesos II",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010908"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010918",
+    "nombre": "Tecnología del Acero en la Construcción",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006760"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010558",
+    "nombre": "Tecnología de la Madera en la Construcción",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [
+      "3006760"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010919",
+    "nombre": "Tecnología de Conglomerantes",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3010347"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010557",
+    "nombre": "Laboratorio de Construcción en Tierra",
+    "creditos": 2,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008523",
+    "nombre": "Construcción, Territorio y Paz en Colombia",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3008524",
+    "nombre": "Construcción, Naturaleza y Cultura",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009923",
+    "nombre": "Análisis y Crítica de la Urbanización Colombiana",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3010833",
+    "nombre": "Desarrollo Urbano en América Latina",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009926",
+    "nombre": "Énfasis IV: Planeación Urbana",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009043",
+    "nombre": "Énfasis II: Planeación Municipal",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3006972",
+    "nombre": "El Bambú en la Infraestructura Rural",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 7,
+    "prerrequisitos": [],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009082",
+    "nombre": "Taller IV - CNT",
+    "creditos": 3,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 8,
+    "prerrequisitos": [
+      "3006775"
+    ],
+    "whatsapp": ""
+  },
+  {
+    "codigo": "3009307",
+    "nombre": "Taller V - CNT",
+    "creditos": 4,
+    "obligatoria": false,
+    "agrupacion": "optativas-disciplinares",
+    "semestre": 9,
+    "prerrequisitos": [
+      "3009082"
+    ],
+    "whatsapp": ""
+  }
+]

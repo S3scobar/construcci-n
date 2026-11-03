@@ -1,0 +1,177 @@
+{
+  "nombre": "Construcción",
+  "universidad": "Universidad Nacional de Colombia",
+  "sede": "Medellín",
+  "facultad": "Facultad de Arquitectura",
+  "escuela": "Escuela de Construcción",
+  "lema": "Facultad de Arquitectura · Sede Medellín",
+  "descripcion": [
+    "El programa de Construcción de la Universidad Nacional de Colombia Sede Medellín forma profesionales con sólidos conocimientos científicos y técnicos en materiales, sistemas y procesos constructivos, técnicas de intervención para obras edilicias y civiles, así como en métodos de planificación, dirección, control e interventoría de proyectos y empresas del sector de la construcción.",
+    "El Arquitecto(a) Constructor(a) de la UNAL Medellín interviene con rigor en la producción, gestión, dirección, consultoría y ejecución de proyectos de infraestructura y hábitat, integrando criterios de sostenibilidad, eficiencia y profunda responsabilidad social frente al entorno urbano y territorial."
+  ],
+  "rutas": [
+    {
+      "id": "obra-compleja-infraestructura",
+      "nombre": "Construcción de Obra Compleja e Infraestructura",
+      "descripcion": "Profundización en el comportamiento mecánico de materiales, sistemas estructurales y procesos de ejecución en obras de infraestructura pública y vial con máxima eficiencia y seguridad.",
+      "icono": "suelos",
+      "color": "#805B46",
+      "codigo": "TRAYECTORIA · 01",
+      "subtitulo": "Sistemas estructurales y obras civiles mayores",
+      "tags": [
+        "Estructuras y Concreto",
+        "Cimentaciones y Geotecnia",
+        "Infraestructura Vial",
+        "Patología de Obras"
+      ]
+    },
+    {
+      "id": "gestion-innovacion-empresarial",
+      "nombre": "Gestión de la Construcción, Innovación y Empresa",
+      "descripcion": "Administración, control de costos, contratación, programación avanzada e interventoría a lo largo del ciclo de vida del proyecto de construcción.",
+      "icono": "gestion",
+      "color": "#4B4038",
+      "codigo": "TRAYECTORIA · 02",
+      "subtitulo": "Gerencia, tecnología BIM y control integral",
+      "tags": [
+        "Metodología BIM / VDC",
+        "Costos, Presupuestos y APU",
+        "Programación Avanzada",
+        "Interventoría Técnica"
+      ]
+    },
+    {
+      "id": "diseno-materiales-procesos",
+      "nombre": "Diseño de Materiales y Procesos",
+      "descripcion": "Conocimiento profundo sobre fabricación, modificación, modelamiento numérico y desarrollo experimental de materiales (acero, madera, tierra, conglomerantes).",
+      "icono": "ciencia",
+      "color": "#B28B6B",
+      "codigo": "TRAYECTORIA · 03",
+      "subtitulo": "Ciencia experimental y tecnología de materiales",
+      "tags": [
+        "Hormigones Avanzados",
+        "Madera y Estructuras de Acero",
+        "Ensayos de Laboratorio",
+        "Reciclaje RCD"
+      ]
+    },
+    {
+      "id": "habitat-gestion-territorio",
+      "nombre": "Hábitat y Gestión del Territorio",
+      "descripcion": "Conjunción del ejercicio de la construcción con el contexto normativo, urbanístico y social para la lectura de procesos de gestión territorial e intervención del hábitat.",
+      "icono": "hidrico",
+      "color": "#65715B",
+      "codigo": "TRAYECTORIA · 04",
+      "subtitulo": "Urbanismo, políticas de hábitat y territorio",
+      "tags": [
+        "Planificación Urbana",
+        "Normativa y NSR-10",
+        "Vivienda y Territorio",
+        "Gestión del Riesgo"
+      ]
+    },
+    {
+      "id": "construccion-sostenible",
+      "nombre": "Construcción Sostenible",
+      "descripcion": "Sistemas constructivos ecológicos, economía circular, cuidado del medio ambiente, materiales reciclados y tecnologías bioclimáticas.",
+      "icono": "saneamiento",
+      "color": "#929493",
+      "codigo": "TRAYECTORIA · 05",
+      "subtitulo": "Ecodiseño, ciclo de vida y hábitat sustentable",
+      "tags": [
+        "Diseño Bioclimático",
+        "Eficiencia Energética",
+        "Economía Circular",
+        "Tecnologías Verdes"
+      ]
+    }
+  ],
+  "ficha": [
+    {
+      "etiqueta": "Título que otorga",
+      "valor": "Arquitecto(a) Constructor(a)"
+    },
+    {
+      "etiqueta": "Créditos del plan",
+      "valor": "180"
+    },
+    {
+      "etiqueta": "Duración del plan",
+      "valor": "10 semestres"
+    },
+    {
+      "etiqueta": "Modalidad",
+      "valor": "Presencial"
+    },
+    {
+      "etiqueta": "Jornada",
+      "valor": "Diurna"
+    },
+    {
+      "etiqueta": "Sede y facultad",
+      "valor": "Medellín · Facultad de Arquitectura"
+    },
+    {
+      "etiqueta": "Área Curricular",
+      "valor": "Construcción y Hábitat (Escuela de Construcción)"
+    },
+    {
+      "etiqueta": "Código SNIES",
+      "valor": "128"
+    },
+    {
+      "etiqueta": "Código SIA",
+      "valor": "3524"
+    },
+    {
+      "etiqueta": "Plan vigente",
+      "valor": "Acuerdo 002 de 2022 (Consejo de Facultad de Arquitectura)"
+    }
+  ],
+  "cifras": [
+    {
+      "valor": "180",
+      "texto": "Créditos del Plan"
+    },
+    {
+      "valor": "10",
+      "texto": "Semestres"
+    },
+    {
+      "valor": "Presencial",
+      "texto": "Jornada Diurna"
+    },
+    {
+      "valor": "SNIES 128",
+      "texto": "Registro Calificado"
+    }
+  ],
+  "acreditacion": {
+    "estado": "Programa Académico de Alta Calidad · Facultad de Arquitectura",
+    "hitos": [
+      {
+        "anio": "Tradición",
+        "texto": "Programa insignia y pionero en Colombia en la formación técnica y científica de profesionales de la edificación y las obras civiles."
+      },
+      {
+        "anio": "Acreditación",
+        "texto": "Reconocimiento y acreditación de alta calidad por su excelencia académica, labor en laboratorios de materiales y liderazgo en el sector constructivo."
+      }
+    ],
+    "nota": "Para consultar resoluciones y reglamentación, acude a la Secretaría de la Facultad de Arquitectura (Bloque 24, Campus El Volador)."
+  },
+  "fuentes": [
+    {
+      "titulo": "Pregrado en Construcción · Facultad de Arquitectura UNAL",
+      "url": "https://arquitectura.medellin.unal.edu.co/pregrado-de-construccion"
+    },
+    {
+      "titulo": "Trámites Estudiantiles · Secretaría de Facultad de Arquitectura",
+      "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+    },
+    {
+      "titulo": "Instagram Oficial · @construccionunal",
+      "url": "https://www.instagram.com/construccionunal/"
+    }
+  ]
+}

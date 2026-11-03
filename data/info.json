@@ -1,0 +1,813 @@
+{
+  "cifras": [
+    {
+      "valor": "4 Grupos",
+      "texto": "Prelación de citas DNINFOA"
+    },
+    {
+      "valor": "3.00",
+      "texto": "P.A.P.A. mínimo de permanencia"
+    },
+    {
+      "valor": "180",
+      "texto": "Créditos exigidos del plan"
+    },
+    {
+      "valor": "16 a 40 h",
+      "texto": "Corresponsabilidad semestral"
+    }
+  ],
+  "categorias": [
+    {
+      "id": "calendario",
+      "nombre": "Calendario Académico",
+      "icono": "calendario",
+      "descripcion": "Dónde consultar las fechas oficiales de cada periodo y qué calendarios publica la Sede Medellín."
+    },
+    {
+      "id": "solicitudes",
+      "nombre": "Trámites Frecuentes y Solicitudes",
+      "icono": "documento",
+      "descripcion": "Cómo radicar solicitudes en la Facultad de Arquitectura: cancelaciones, reservas de cupo, reingresos y trámites frecuentes ante la Secretaría de Facultad."
+    },
+    {
+      "id": "citas",
+      "nombre": "Citas de Inscripción",
+      "icono": "calendario",
+      "descripcion": "Nuevo modelo oficial DNINFOA: 4 grupos de prelación, Índice IPA, Registro RII y consulta de cita."
+    },
+    {
+      "id": "papa",
+      "nombre": "P.A.P.A. y Notas",
+      "icono": "grafica",
+      "descripcion": "Qué es el PAPA, cómo se calcula, diferencias con el PAPPI, límite de 3.00 y simulador interactivo."
+    },
+    {
+      "id": "creditos",
+      "nombre": "Créditos y Bolsa SIA",
+      "icono": "bolsa",
+      "descripcion": "Qué es un crédito, bolsa de 180 créditos + bolsa adicional (90 créditos), semana sin pérdida y libre elección."
+    },
+    {
+      "id": "corresponsabilidad",
+      "nombre": "Horas de Corresponsabilidad",
+      "icono": "manos",
+      "descripcion": "Compromiso de apoyos y becas desde 16 horas, dónde cumplirlas en el Campus El Volador y normatividad."
+    },
+    {
+      "id": "faq",
+      "nombre": "Preguntas Frecuentes",
+      "icono": "faq",
+      "descripcion": "Respuestas directas y rápidas a las dudas más comunes de la vida universitaria."
+    }
+  ],
+  "guias": [
+    {
+      "id": "citas-dninfoa",
+      "categoria": "citas",
+      "etiqueta": "Nuevo Modelo Oficial DNINFOA",
+      "titulo": "¿Cómo se asignan las Citas de Inscripción en la UNAL?",
+      "subtitulo": "¡El P.A.P.P.I. ya no define tu cita! Anteriormente las citas del SIA se asignaban exclusivamente según el promedio del último semestre (PAPPI). Ahora rigen los 4 Grupos de Prelación y el Índice IPA.",
+      "enlaceExterno": {
+        "texto": "Consultar mi citación oficial en DNINFOA",
+        "url": "https://dninfoa.unal.edu.co/citaciones/"
+      },
+      "enlaceOficial": {
+        "texto": "Leer Circular Oficial de Citaciones · Dirección Nacional de Información Académica (DNINFOA)",
+        "url": "https://dninfoa.unal.edu.co/citaciones/"
+      },
+      "puntosClave": [
+        {
+          "icono": "alerta",
+          "titulo": "El PAPPI fue reemplazado",
+          "texto": "El antiguo sistema basado únicamente en el PAPPI del último semestre fue sustituido para reconocer la equidad académica, situaciones especiales y etapas de grado."
+        },
+        {
+          "icono": "check",
+          "titulo": "Una sola ubicación por estudiante",
+          "texto": "Cada estudiante es asignado a un único grupo de prelación. Si cumples condiciones de varios, el sistema te ubica en el de mayor prioridad (número menor)."
+        },
+        {
+          "icono": "reloj",
+          "titulo": "Cita Nocturna de Rezagados",
+          "texto": "Si no pudiste inscribir en tu turno del día, a partir de las 5:50 p.m. se habilita la cita nocturna para que puedas inscribir materias pendientes."
+        }
+      ],
+      "gruposPrelacion": [
+        {
+          "numero": "1",
+          "nombre": "Acciones Afirmativas y Situaciones Especiales",
+          "descripcion": "Estudiantes con discapacidad registrada, deportistas de representación institucional o nacional, cuidadores y poblaciones con enfoque diferencial o vulnerabilidad reconocida."
+        },
+        {
+          "numero": "2",
+          "nombre": "Etapas Críticas de Permanencia",
+          "descripcion": "Estudiantes en momentos de transición o riesgo académico temprano identificados por la universidad para acompañamiento y prevención de deserción."
+        },
+        {
+          "numero": "3",
+          "nombre": "Próximos a Graduación (Avance > 80%)",
+          "descripcion": "Estudiantes con un avance superior al 80% en su plan de estudios, garantizándoles prioridad de citación para asegurar las últimas asignaturas de su carrera."
+        },
+        {
+          "numero": "4",
+          "nombre": "Estudiantes Regulares (Ordenados por IPA)",
+          "descripcion": "Bloque general de estudiantes. Se ordenan internamente mediante el Índice de Prioridad de Asignación (IPA), el cual premia la participación en el RII, el promedio y encuestas de bienestar."
+        }
+      ],
+      "factoresIpa": [
+        {
+          "titulo": "Registro de Intención de Inscripción (RII)",
+          "detalle": "Participar en el RII en las fechas oficiales te suma puntos directos en el IPA. ¡Es voluntario pero indispensable para conseguir una mejor cita!"
+        },
+        {
+          "titulo": "Rendimiento del Semestre",
+          "detalle": "Tus calificaciones y avance curricular del periodo aportan puntos al puntaje base del IPA."
+        },
+        {
+          "titulo": "Herramientas de Bienestar (EDIFICANDO)",
+          "detalle": "Diligenciar a tiempo los cuestionarios institucionales y estrategias de acompañamiento suma bonificación en tu puntaje."
+        },
+        {
+          "titulo": "Desempate Aleatorio Controlado",
+          "detalle": "Si varios estudiantes empatan en puntos dentro de su subgrupo, el sistema aplica un factor aleatorio (0 a 1) solo para definir los minutos de turno."
+        }
+      ],
+      "reglasDiaCita": [
+        "Inicia sesión estrictamente a la hora programada en tu citación. Si entras antes o después, el SIA no habilitará el formulario de automatrícula.",
+        "Usa una ventana de incógnito en Google Chrome o Mozilla Firefox con la memoria caché limpia para evitar bloqueos de sesión.",
+        "Consulta antes el Buscador de Cursos del SIA y ten listos 2 o 3 horarios alternativos por si se agotan cupos en algún grupo."
+      ],
+      "consejo": "Ingresa siempre a dninfoa.unal.edu.co/citaciones/ digitando tu documento de identidad para verificar tu día y hora exacta apenas se publiquen las fechas."
+    },
+    {
+      "id": "que-es-el-papa",
+      "categoria": "papa",
+      "etiqueta": "Métrica de Rendimiento",
+      "titulo": "¿Qué es el P.A.P.A. y para qué sirve?",
+      "subtitulo": "El Promedio Académico Ponderado Acumulado rige la permanencia en la UNAL y es la base de estímulos como la exención de matrícula por mejores promedios.",
+      "enlaceOficial": {
+        "texto": "Consultar Estatuto Estudiantil (Acuerdo 008 de 2008 CSU) · Régimen Académico",
+        "url": "https://legal.unal.edu.co/rlunal/home/doc.jsp?d_i=34983"
+      },
+      "puntosClave": [
+        {
+          "icono": "check",
+          "titulo": "Mínimo 3.00 para no perder cupo",
+          "texto": "Si al cerrar cualquier semestre tu P.A.P.A. acumulado baja de 3.00, incurres en pérdida automática de la calidad de estudiante."
+        },
+        {
+          "icono": "grafica",
+          "titulo": "Ponderado por Créditos",
+          "texto": "Cada materia pesa según sus créditos: una asignatura de 4 créditos influye el doble en tu promedio que una de 2 créditos."
+        },
+        {
+          "icono": "estrella",
+          "titulo": "Estímulo por mejores promedios",
+          "texto": "No se otorga por superar un PAPA fijo: en la Sede Medellín se premia, con exención del pago de la matrícula del periodo siguiente, a los 15 mejores promedios de cada programa (con empates). Hay que haber inscrito el mínimo de 10 créditos."
+        }
+      ],
+      "formula": "P.A.P.A. = ∑ (Nota Asignatura × Créditos) ÷ ∑ Créditos Totales Cursados",
+      "tabla": {
+        "cabecera": [
+          "Métrica",
+          "¿Qué calcula?",
+          "¿Para qué sirve hoy?"
+        ],
+        "filas": [
+          [
+            "<strong>P.A.P.A.</strong>",
+            "Promedio histórico de toda la carrera ponderado por créditos.",
+            "Permanencia (mínimo 3.00), estímulo por mejores promedios, becas de posgrado y dobles titulaciones."
+          ],
+          [
+            "<strong>P.A.P.P.I.</strong>",
+            "Promedio ponderado del último semestre terminado.",
+            "Indicador de rendimiento inmediato del periodo. Históricamente definía las citas de inscripción; hoy reemplazado por los 4 grupos de prelación y el IPA."
+          ],
+          [
+            "<strong>P.A.</strong>",
+            "Promedio aritmético simple (sin tener en cuenta créditos).",
+            "Dato complementario e informativo en la historia académica."
+          ]
+        ]
+      },
+      "consejo": "Si repruebas una materia, esa calificación nunca se borra ni se reemplaza. Al repetirla y aprobarla, ambas notas siguen ponderando en el acumulado."
+    },
+    {
+      "id": "sistema-de-creditos",
+      "categoria": "creditos",
+      "etiqueta": "Créditos y Bolsa SIA",
+      "titulo": "¿Cómo funciona la Bolsa de Créditos en la UNAL?",
+      "subtitulo": "Al ingresar recibes un cupo de créditos. Si cancelas en la 'semana sin pérdida' se te reintegran; si cancelas después o repruebas, no se recuperan.",
+      "enlaceOficial": {
+        "texto": "Consultar Manual de Créditos y Cancelaciones · Portal SIA UNAL",
+        "url": "https://sia.unal.edu.co/"
+      },
+      "puntosClave": [
+        {
+          "icono": "check",
+          "titulo": "Semana sin pérdida: ¡Reintegro total!",
+          "texto": "Si cancelas una asignatura durante las fechas oficiales de adición y cancelación sin pérdida (primeras semanas de clase), el SIA te reintegra inmediatamente los créditos a tu bolsa disponible."
+        },
+        {
+          "icono": "bolsa",
+          "titulo": "180 Exigidos + Bolsa Adicional",
+          "texto": "En Construcción tu plan exige 180 créditos y el SIA te entrega un cupo total de bolsa de 270 créditos (180 base + 90 adicionales al 50 %) para cursarlos con margen de repetición o doble titulación."
+        },
+        {
+          "icono": "alerta",
+          "titulo": "Cuidado con vaciar la bolsa",
+          "texto": "Si tu cupo disponible llega a 0 créditos y no has terminado el plan de estudios, pierdes la condición de estudiante por agotamiento de créditos."
+        }
+      ],
+      "pasos": [
+        {
+          "paso": "1",
+          "titulo": "Inscripción",
+          "desc": "Al inscribir asignaturas, el SIA resta inmediatamente esos créditos de tu bolsa disponible."
+        },
+        {
+          "paso": "2",
+          "titulo": "Semana sin pérdida",
+          "desc": "Si cancelas durante este periodo inicial del calendario, el SIA te devuelve los créditos a tu bolsa libre."
+        },
+        {
+          "paso": "3",
+          "titulo": "¿Reprobaste?",
+          "desc": "Los créditos gastados NO se devuelven. Para repetirla deberás consumir créditos adicionales de tu cupo libre."
+        },
+        {
+          "paso": "4",
+          "titulo": "Cancelación posterior",
+          "desc": "Si cancelas después de la semana sin pérdida, la materia no entra al PAPA, pero el cupo semestral consumido no se reintegra."
+        }
+      ],
+      "consejo": "Revisa siempre en el SIA (Historia Académica -> Resumen de Créditos) tus créditos disponibles. Si tienes dudas, consulta con el Área Curricular de Medio Ambiente / Geociencias y Medio Ambiente."
+    },
+    {
+      "id": "horas-de-corresponsabilidad",
+      "categoria": "corresponsabilidad",
+      "etiqueta": "Compromiso de Bienestar",
+      "titulo": "¿Qué son las Horas de Corresponsabilidad y cómo pagarlas?",
+      "subtitulo": "Compromiso formativo y solidario obligatorio para estudiantes beneficiarios de apoyos socioeconómicos de Bienestar Universitario (van desde 16 horas semestrales).",
+      "enlaceOficial": {
+        "texto": "Convocatorias y Reglamentación de Bienestar · Sede Medellín",
+        "url": "https://bienestar.medellin.unal.edu.co/"
+      },
+      "puntosClave": [
+        {
+          "icono": "manos",
+          "titulo": "¿A quiénes les aplica?",
+          "texto": "Beneficiarios de Gestión Alimentaria (comedor/bonos de almuerzo), Residencias Universitarias o Apoyos Económicos Estudiantiles."
+        },
+        {
+          "icono": "reloj",
+          "titulo": "Desde 16 horas semestrales",
+          "texto": "Las horas van desde las 16 horas semestrales para apoyos alimentarios básicos hasta 40 horas para residencias universitarias o apoyos combinados."
+        },
+        {
+          "icono": "alerta",
+          "titulo": "Sanción por incumplimiento",
+          "texto": "Si no completas tus horas antes del cierre del periodo, pierdes el subsidio de inmediato para el semestre siguiente."
+        }
+      ],
+      "pasos": [
+        {
+          "paso": "1",
+          "titulo": "Convocatoria",
+          "desc": "Al iniciar el semestre, revisa las plazas abiertas por correo institucional o en la Dirección de Bienestar Universitario Sede Medellín (Campus El Volador, Bloque 50)."
+        },
+        {
+          "paso": "2",
+          "titulo": "Asignación y Horario",
+          "desc": "Eliges una dependencia (bibliotecas, salas de cómputo, talleres, laboratorios o eventos) y acuerdas un horario compatible con tus clases."
+        },
+        {
+          "paso": "3",
+          "titulo": "Planilla y Actividades",
+          "desc": "Cumples las actividades asignadas y registras las horas en la planilla oficial con firma del tutor o supervisor."
+        },
+        {
+          "paso": "4",
+          "titulo": "Paz y Salvo",
+          "desc": "El supervisor radica tu cumplimiento ante Bienestar para certificar tu paz y salvo y renovar el apoyo."
+        }
+      ],
+      "lugaresPago": [
+        "Bibliotecas UNAL: Biblioteca Central Efe Gómez (Campus El Volador) y salas de lectura.",
+        "Salas de Cómputo y Talleres de Arquitectura: Soporte técnico y de proyectos en Bloques 24 y 25.",
+        "Bienestar Universitario Sede Medellín (Bloque 50): Apoyo en eventos deportivos, culturales y salud.",
+        "Proyectos Institucionales y Eventos: Actividades académicas, ferias de inducción y apoyo a la comunidad universitaria."
+      ],
+      "consejo": "No dejes las horas de corresponsabilidad para las semanas de parciales finales. Comienza a pagarlas desde las primeras semanas de clase."
+    },
+    {
+      "id": "calendario-academico",
+      "categoria": "calendario",
+      "etiqueta": "Pregrado · Sede Medellín",
+      "titulo": "Calendario pregrado 2026-2S",
+      "subtitulo": "Fechas límite del periodo académico y de las solicitudes estudiantiles. El estado (finalizó, en curso, faltan N días) se calcula con la fecha de tu dispositivo.",
+      "calendario": {
+        "periodo": "2026-2S",
+        "grupos": [
+          {
+            "id": "academico",
+            "titulo": "Fechas del periodo",
+            "filas": [
+              {
+                "actividad": "Adición y cancelación de asignaturas sin descuento de créditos",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-09-10",
+                "nota": "Portal de Servicios Académicos"
+              },
+              {
+                "actividad": "Cancelación de asignaturas con descuento de créditos",
+                "aplica": "2026-2S",
+                "inicio": "2026-09-15",
+                "fin": "2026-10-22",
+                "nota": "Portal de Servicios Académicos"
+              },
+              {
+                "actividad": "Consolidación de matrícula",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": "2026-09-14"
+              },
+              {
+                "actividad": "Reporte de notas parciales (30 %)",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": "2026-10-01"
+              },
+              {
+                "actividad": "Reporte de notas parciales (60 %)",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": "2026-11-05"
+              },
+              {
+                "actividad": "Semana universitaria",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": null
+              },
+              {
+                "actividad": "Finalización de clases",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Reporte de notas (100 %)",
+                "aplica": "2026-2S",
+                "inicio": null,
+                "fin": "2026-12-19"
+              }
+            ]
+          },
+          {
+            "id": "solicitudes",
+            "titulo": "Solicitudes estudiantiles",
+            "filas": [
+              {
+                "actividad": "Cambio de tutor",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Cancelación de asignatura(s) posterior al 50 % de avance del periodo",
+                "aplica": "2026-2S",
+                "inicio": "2026-09-17",
+                "fin": "2026-12-17",
+                "nota": "Ante el Consejo de Facultad"
+              },
+              {
+                "actividad": "Cancelación de periodo académico",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Carga inferior a la mínima",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-09-13"
+              },
+              {
+                "actividad": "Carga inferior a la mínima",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Devolución de dinero",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Doble titulación",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-09-24"
+              },
+              {
+                "actividad": "Doble titulación internacional",
+                "aplica": null,
+                "inicio": null,
+                "fin": null
+              },
+              {
+                "actividad": "Autorización de inscripción/adición no oportuna de asignatura(s)",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-11-05"
+              },
+              {
+                "actividad": "Autorización de inscripción/adición no oportuna de TDG o actividades académicas",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-11-26"
+              },
+              {
+                "actividad": "Modificación de trabajo de grado (TDG)",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Movilidad interna entre sedes",
+                "aplica": "2027-1S",
+                "inicio": "2026-10-08",
+                "fin": "2026-11-05"
+              },
+              {
+                "actividad": "Práctica académica especial (PAE)",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-03"
+              },
+              {
+                "actividad": "Reconocimiento de asignatura(s)",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-10-01"
+              },
+              {
+                "actividad": "Recurso de reposición y/o apelación",
+                "aplica": null,
+                "inicio": null,
+                "fin": null,
+                "nota": "10 días hábiles desde la notificación"
+              },
+              {
+                "actividad": "Reingreso",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-10-15"
+              },
+              {
+                "actividad": "Reserva de cupo adicional",
+                "aplica": "2027-1S",
+                "inicio": "2026-10-22",
+                "fin": "2026-11-19"
+              },
+              {
+                "actividad": "Retiro de la Universidad",
+                "aplica": "2026-2S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-17"
+              },
+              {
+                "actividad": "Trabajo de grado (TDG), en cualquiera de sus modalidades",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-12-03"
+              },
+              {
+                "actividad": "Traslado",
+                "aplica": "2027-1S",
+                "inicio": "2026-08-27",
+                "fin": "2026-10-08"
+              }
+            ]
+          }
+        ],
+        "nota": "Este calendario es orientativo: el conteo depende de la fecha de tu dispositivo. Confirma siempre las fechas en la fuente oficial.",
+        "fuente": {
+          "texto": "Calendario Académico y Trámites · Facultad de Arquitectura",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        }
+      }
+    },
+    {
+      "id": "solicitudes-estudiantiles",
+      "categoria": "solicitudes",
+      "etiqueta": "Facultad de Arquitectura · Secretaría de Facultad",
+      "titulo": "¿Cómo radicar solicitudes y trámites en la Facultad de Arquitectura?",
+      "subtitulo": "Las solicitudes académicas en la Facultad de Arquitectura se gestionan a través de la Secretaría de Facultad y el SIA conforme al Estatuto Estudiantil (Acuerdo 008 de 2008 CSU) y las directrices del Área Curricular de Construcción y Hábitat.",
+      "enlaceExterno": {
+        "texto": "Ver las solicitudes y trámites de la Facultad de Arquitectura",
+        "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+      },
+      "pasos": [
+        {
+          "numero": "1",
+          "titulo": "Identifica el tipo de trámite y normativa",
+          "texto": "Determina si tu solicitud corresponde a un trámite ordinario por el SIA (ej. cancelación de asignatura antes del 50%) o a una solicitud formal ante el Consejo de Facultad o Comité de Carrera."
+        },
+        {
+          "numero": "2",
+          "titulo": "Reúne soportes oficiales y carta explicativa",
+          "texto": "Para cancelaciones extemporáneas, reservas de cupo, excusas o traslados, prepara cartas detalladas y certificados (médicos avalados por Bienestar, laborales o de fuerza mayor en PDF)."
+        },
+        {
+          "numero": "3",
+          "titulo": "Radica ante la Secretaría de Facultad de Arquitectura",
+          "texto": "Ingresa al portal oficial de trámites de la Facultad (o envía correo institucional a secfacarq_med@unal.edu.co indicando nombre, cédula y programa curricular de Construcción)."
+        },
+        {
+          "numero": "4",
+          "titulo": "Seguimiento en SIA y respuesta formal",
+          "texto": "La Secretaría de Facultad y el Consejo de Facultad emiten respuesta mediante resolución o acta. Puedes verificar la actualización de tu historia académica directamente en el SIA."
+        }
+      ],
+      "puntosClave": [
+        {
+          "icono": "alerta",
+          "titulo": "Si alguien no confirma, no se tramita",
+          "texto": "La fecha de la solicitud es la de la última confirmación. En la cancelación de asignaturas, las no confirmadas en 12 días hábiles se descartan."
+        },
+        {
+          "icono": "check",
+          "titulo": "Soportes dentro del formulario",
+          "texto": "En la cancelación de asignaturas la página aclara que los soportes enviados por fuera del formulario no se aceptan. Deben incluir tu nombre, documento, fecha de expedición y contacto."
+        },
+        {
+          "icono": "reloj",
+          "titulo": "Formato sugerido solo como alternativa",
+          "texto": "Se usa únicamente si te lo indican o si el SGS falla: se envía desde tu correo @unal.edu.co; lo recibido después de las 5:00 p. m. se registra el siguiente día hábil."
+        }
+      ],
+      "tramitesComunes": [
+        {
+          "nombre": "Cancelación de Asignatura(s) (Ordinaria en SIA)",
+          "codigo": "CANCEL-SIA",
+          "plazo": "Antes del 50% del semestre",
+          "tipo": "En línea (SIA)",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Cancelación Extemporánea de Asignatura(s)",
+          "codigo": "CANCEL-EXTEMP",
+          "plazo": "Posterior al 50% con justa causa",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Cancelación del Período Académico",
+          "codigo": "CANCEL-PERIODO",
+          "plazo": "Hasta última semana de clases",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Carga Académica Inferior a la Mínima",
+          "codigo": "CARGA-MINIMA",
+          "plazo": "Fechas de calendario oficial",
+          "tipo": "Secretaría de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Autorización de Inscripción / Adición no Oportuna",
+          "codigo": "ADICION-NO-OPORTUNA",
+          "plazo": "Primer tercio del periodo",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Trabajo de Grado (Inscripción de Modalidad y Tutor)",
+          "codigo": "TDG-INSCRIPCION",
+          "plazo": "Al alcanzar el 80% de avance",
+          "tipo": "Comité Asesor de Carrera",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Modificación de Trabajo de Grado (TDG)",
+          "codigo": "TDG-MODIFICACION",
+          "plazo": "Durante el semestre lectivo",
+          "tipo": "Comité Asesor de Carrera",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Homologación, Convalidación o Validación",
+          "codigo": "HOMOLOGACION",
+          "plazo": "Al inicio de cada periodo",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Reserva de Cupo Adicional",
+          "codigo": "RESERVA-CUPO",
+          "plazo": "Según calendario académico",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Reingreso al Programa Curricular",
+          "codigo": "REINGRESO",
+          "plazo": "Previo a inicio de semestre",
+          "tipo": "Secretaría de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Doble Titulación (Interna / Nacional)",
+          "codigo": "DOBLE-TITULACION",
+          "plazo": "Cumpliendo avance y PAPA",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Traslado de Programa Curricular",
+          "codigo": "TRASLADO",
+          "plazo": "Convocatoria semestral",
+          "tipo": "Consejo de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Movilidad Académica Inter-Sedes y Saliente",
+          "codigo": "MOVILIDAD",
+          "plazo": "Convocatoria DRE / Sede",
+          "tipo": "Área Curricular / DRE",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "nombre": "Proceso de Grado y Paz y Salvos",
+          "codigo": "GRADOS",
+          "plazo": "Calendario de ceremonias",
+          "tipo": "Secretaría de Facultad",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        }
+      ],
+      "consejo": "Para cualquier duda normativa, asesórate con la representante estudiantil de Construcción Johana Andrea (319 3584740) o acércate a la Secretaría de la Facultad de Arquitectura en el Bloque 24.",
+      "enlaceOficial": {
+        "texto": "Portal Oficial de Trámites Estudiantiles · Facultad de Arquitectura",
+        "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+      },
+      "canalesRadicacion": [
+        {
+          "canal": "Portal Web de Trámites · Facultad de Arquitectura",
+          "detalle": "Formularios e instructivos oficiales por tipo de trámite",
+          "icono": "web",
+          "badge": "Canal Principal",
+          "url": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles"
+        },
+        {
+          "canal": "Secretaría de Facultad de Arquitectura",
+          "detalle": "secfacarq_med@unal.edu.co · Bloque 24, Campus El Volador",
+          "icono": "correo",
+          "badge": "Oficial",
+          "url": "mailto:secfacarq_med@unal.edu.co"
+        },
+        {
+          "canal": "Área Curricular de Construcción y Hábitat",
+          "detalle": "areaconstrucyhab_med@unal.edu.co · Escuela de Construcción",
+          "icono": "correo",
+          "badge": "Asesoría Curricular",
+          "url": "mailto:areaconstrucyhab_med@unal.edu.co"
+        },
+        {
+          "canal": "Sistema de Información Académica (SIA)",
+          "detalle": "www.sia.unal.edu.co · Cancelación libre y automatrícula",
+          "icono": "documento",
+          "badge": "Autoservicio",
+          "url": "https://www.sia.unal.edu.co"
+        }
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "id": "faq-citas-1",
+      "categoria": "citas",
+      "pregunta": "¿Por qué mi cita de inscripción ya no depende del PAPPI?",
+      "respuesta": "Históricamente, el SIA ordenaba las citas de automatrícula exclusivamente según el <strong>P.A.P.P.I.</strong> (Promedio Académico Ponderado del Periodo Inmediato). La Vicerrectoría Académica y DNINFOA implementaron un modelo de <strong>4 Grupos de Prelación</strong> para garantizar mayor equidad social y académica, priorizando situaciones especiales, momentos de riesgo de deserción y estudiantes con avance superior al 80%. Para el bloque general de estudiantes (Grupo 4), se implementó el <strong>Índice IPA</strong> en reemplazo del PAPPI."
+    },
+    {
+      "id": "faq-citas-2",
+      "categoria": "citas",
+      "pregunta": "¿Qué es el RII y cómo me ayuda a tener una cita más temprana?",
+      "respuesta": "El <strong>Registro de Intención de Inscripción (RII)</strong> es una consulta previa donde indicas qué materias planeas cursar el próximo semestre. Aunque es voluntario, diligenciarlo en las fechas oficiales otorga puntos adicionales en el <strong>Índice de Prioridad de Asignación (IPA)</strong> dentro del Grupo 4, mejorando significativamente tu cita."
+    },
+    {
+      "id": "faq-citas-3",
+      "categoria": "citas",
+      "pregunta": "¿Dónde y cuándo puedo consultar mi cita de inscripción?",
+      "respuesta": "Puedes consultarla ingresando con tu cédula en el portal oficial de la Dirección Nacional de Información Académica: <a href=\"https://dninfoa.unal.edu.co/citaciones/\" target=\"_blank\" rel=\"noopener\"><strong>dninfoa.unal.edu.co/citaciones/</strong></a>, o revisando las notificaciones en tu correo electrónico institucional."
+    },
+    {
+      "id": "faq-citas-4",
+      "categoria": "citas",
+      "pregunta": "¿Qué pasa si se me pasó la hora de mi cita y no alcancé a inscribir?",
+      "respuesta": "No te preocupes: la universidad habilita la <strong>Cita Nocturna de Rezagados</strong> (generalmente a partir de las 5:50 p.m. del mismo día de tu cita) para que todos los estudiantes que no completaron su proceso diurno puedan acceder y guardar sus asignaturas."
+    },
+    {
+      "id": "faq-papa-1",
+      "categoria": "papa",
+      "pregunta": "¿Qué pasa si mi P.A.P.A. baja a 2.99 o menos?",
+      "respuesta": "Al término del periodo ordinario, si tu P.A.P.A. acumulado es menor a 3.00, entras en 'Pérdida de la calidad de estudiante' (pérdida de cupo). Tienes la opción de radicar solicitud de reingreso o readmisión ante el Consejo de Facultad de Arquitectura en las fechas del calendario académico."
+    },
+    {
+      "id": "faq-papa-2",
+      "categoria": "papa",
+      "pregunta": "¿Si repito una materia reprobada con 5.0 se borra la nota mala anterior?",
+      "respuesta": "No. En la Universidad Nacional ninguna nota se borra ni se reemplaza. Ambas notas (la reprobada y la nueva) quedan en tu certificado histórico y ambas se ponderan por sus créditos en la fórmula del P.A.P.A."
+    },
+    {
+      "id": "faq-creditos-1",
+      "categoria": "creditos",
+      "pregunta": "¿Si cancelo una materia me devuelven los créditos a la bolsa?",
+      "respuesta": "Depende de la fecha: Si cancelas durante la <strong>semana oficial de cancelaciones sin pérdida de créditos</strong> (en las primeras semanas del periodo según el calendario académico), <strong>los créditos se te reintegran inmediatamente a tu bolsa disponible</strong>. Si cancelas posteriormente (cancelación ordinaria), la materia no perjudica tu P.A.P.A., pero el cupo consumido de ese semestre ya no se devuelve a tu bolsa libre."
+    },
+    {
+      "id": "faq-creditos-2",
+      "categoria": "creditos",
+      "pregunta": "¿Puedo usar créditos de Libre Elección para ver materias de maestría?",
+      "respuesta": "Sí. Puedes utilizar tus 36 créditos de Libre Elección para inscribir materias de nivel posgrado de la Facultad de Arquitectura (u otras facultades de la sede). Si más adelante ingresas a un posgrado UNAL, estas asignaturas se pueden convalidar."
+    },
+    {
+      "id": "faq-corresp-1",
+      "categoria": "corresponsabilidad",
+      "pregunta": "¿Cuántas horas de corresponsabilidad debo pagar y qué pasa si no lo hago?",
+      "respuesta": "Las horas van desde las <strong>16 horas semestrales</strong> (según el beneficio asignado: alimentación, alojamiento o residencia). Si no las completas antes del cierre del semestre, quedas en estado de incumplimiento y <strong>pierdes de inmediato el subsidio</strong> para el periodo siguiente, sin posibilidad de renovarlo hasta ponerte al día."
+    }
+  ],
+  "glosario": [
+    {
+      "sigla": "DNINFOA",
+      "definicion": "Dirección Nacional de Información Académica. Entidad encargada de las citaciones y plataformas del SIA."
+    },
+    {
+      "sigla": "IPA",
+      "definicion": "Índice de Prioridad de Asignación. Indicador que ordena las citas de matrícula de los estudiantes regulares del Grupo 4."
+    },
+    {
+      "sigla": "RII",
+      "definicion": "Registro de Intención de Inscripción. Encuesta previa voluntaria que suma puntos directos en el IPA para tu cita."
+    },
+    {
+      "sigla": "P.A.P.A.",
+      "definicion": "Promedio Académico Ponderado Acumulado. Pondera todas las notas cursadas por sus créditos."
+    },
+    {
+      "sigla": "P.A.P.P.I.",
+      "definicion": "Promedio Académico Ponderado del Periodo Inmediato. Mide únicamente el último semestre cursado."
+    },
+    {
+      "sigla": "S.I.A.",
+      "definicion": "Sistema de Información Académica de la UNAL para inscripción, notas e historia académica."
+    },
+    {
+      "sigla": "Bolsa de Créditos",
+      "definicion": "Cupo total de créditos asignados para cursar la carrera (180 exigidos + 90 de bolsa adicional en el SIA)."
+    },
+    {
+      "sigla": "Corresponsabilidad",
+      "definicion": "Horas semestrales de apoyo institucional (desde 16 horas) requeridas a los beneficiarios de bienestar y apoyos."
+    }
+  ],
+  "enlaces": [
+    {
+      "titulo": "Citaciones DNINFOA UNAL",
+      "url": "https://dninfoa.unal.edu.co/citaciones/",
+      "descripcion": "Consulta oficial de día, hora y grupo de prelación para la inscripción de asignaturas."
+    },
+    {
+      "titulo": "Portal SIA UNAL",
+      "url": "https://sia.unal.edu.co/",
+      "descripcion": "Inscripción de asignaturas, buscador de cursos, historia académica y cupo de créditos."
+    },
+    {
+      "titulo": "Facultad de Arquitectura",
+      "url": "https://arquitectura.medellin.unal.edu.co/",
+      "descripcion": "Secretaría de Facultad, trámites estudiantiles, Área Curricular de Construcción y Hábitat y calendario oficial."
+    },
+    {
+      "titulo": "Bienestar Universitario Sede Medellín",
+      "url": "https://bienestar.medellin.unal.edu.co/",
+      "descripcion": "Gestión alimentaria, residencias, convocatorias de corresponsabilidad y salud estudiantil."
+    }
+  ],
+  "asesoria": {
+    "titulo": "¿Necesitas asesoría sobre un tema?",
+    "texto": "Escribe desde tu correo institucional a la Secretaría de la Facultad de Arquitectura o contacta a la representación estudiantil de Construcción.",
+    "correo": "secfacarq_med@unal.edu.co",
+    "telefono": "(+57 604) 430 9000",
+    "direccion": "Campus El Volador, Bloque 24, Medellín",
+    "solicitudes": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles",
+    "representacion": "319 3584740"
+  }
+}

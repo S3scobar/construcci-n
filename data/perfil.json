@@ -1,0 +1,27 @@
+{
+  "titulo": "Perfil del arquitecto constructor egresado",
+  "intro": "Un profesional formado en la Facultad de Arquitectura de la Universidad Nacional de Colombia Sede Medellín, con rigurosa base científica, tecnológica, administrativa y de gestión territorial para liderar proyectos edilicios, civiles y de infraestructura.",
+  "rasgos": [
+    {
+      "icono": "ciencia",
+      "titulo": "Ciencia y tecnología de materiales",
+      "texto": "Domina el comportamiento mecánico, físico y químico de los materiales convencionales e innovadores (conglomerantes, aceros, maderas, polímeros y tierra), liderando ensayos de laboratorio y control de calidad."
+    },
+    {
+      "icono": "equipo",
+      "titulo": "Dirección, planificación y ejecución de obras",
+      "texto": "Planifica y lidera procesos constructivos en obra edilicia y de infraestructura, garantizando productividad, seguridad industrial, rendimientos y cumplimiento estricto de especificaciones técnicas."
+    },
+    {
+      "icono": "gestion",
+      "titulo": "Gestión financiera, costos e interventoría",
+      "texto": "Estructura presupuestos, análisis de precios unitarios (APU), programación de obra (PERT/CPM/BIM), licitaciones públicas y privadas, control de contratos e interventoría técnica integral."
+    },
+    {
+      "icono": "empresa",
+      "titulo": "Patología y rehabilitación de estructuras",
+      "texto": "Diagnostica lesiones, causas de deterioro y vulnerabilidad en edificaciones existentes, diseñando técnicas de intervención, mantenimiento, refuerzo estructural y restauración arquitectónica."
+    }
+  ],
+  "fuente": "Proyecto Educativo del Programa (PEP) de Construcción · Facultad de Arquitectura, Sede Medellín."
+}

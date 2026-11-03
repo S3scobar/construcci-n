@@ -1,0 +1,112 @@
+{
+  "componentes": [
+    {
+      "id": "fundamentacion",
+      "nombre": "Fundamentación",
+      "color": "#805B46",
+      "descripcion": "Ciencias básicas, matemáticas, física, fundamentos de materiales, herramientas técnicas y humanística que sustentan la ciencia y la técnica de la edificación."
+    },
+    {
+      "id": "disciplinar",
+      "nombre": "Formación disciplinar o profesional",
+      "color": "#4B4038",
+      "descripcion": "Eje central de la construcción: procesos y sistemas constructivos, representación, talleres de obra, estructuras, costos, programación, patología y trabajo de grado."
+    },
+    {
+      "id": "libre-eleccion",
+      "nombre": "Libre elección",
+      "color": "#65715B",
+      "descripcion": "Créditos para complementar tu perfil profesional: asignaturas de cualquier carrera de la UNAL, profundizaciones, lenguas extranjeras y electivas técnicas."
+    }
+  ],
+  "agrupaciones": [
+    {
+      "id": "ingenieria-y-ciencias",
+      "componente": "fundamentacion",
+      "nombre": "Ingeniería y Ciencias Básicas",
+      "exigidos": 18,
+      "obligatorios": 18,
+      "optativos": 0
+    },
+    {
+      "id": "materiales-de-construccion",
+      "componente": "fundamentacion",
+      "nombre": "Materiales de Construcción",
+      "exigidos": 17,
+      "obligatorios": 17,
+      "optativos": 0
+    },
+    {
+      "id": "humanistica",
+      "componente": "fundamentacion",
+      "nombre": "Humanística y Hábitat",
+      "exigidos": 12,
+      "obligatorios": 12,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-fundamentacion",
+      "componente": "fundamentacion",
+      "nombre": "Optativas de Fundamentación",
+      "exigidos": 10,
+      "obligatorios": 0,
+      "optativos": 10
+    },
+    {
+      "id": "ejecucion-de-obras",
+      "componente": "disciplinar",
+      "nombre": "Ejecución de Obras y Talleres",
+      "exigidos": 28,
+      "obligatorios": 28,
+      "optativos": 0
+    },
+    {
+      "id": "gestion-de-la-construccion",
+      "componente": "disciplinar",
+      "nombre": "Gestión de la Construcción y Proyectos",
+      "exigidos": 23,
+      "obligatorios": 23,
+      "optativos": 0
+    },
+    {
+      "id": "representacion-del-proyecto",
+      "componente": "disciplinar",
+      "nombre": "Representación del Proyecto",
+      "exigidos": 9,
+      "obligatorios": 9,
+      "optativos": 0
+    },
+    {
+      "id": "patologia",
+      "componente": "disciplinar",
+      "nombre": "Patología de la Construcción",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "optativas-disciplinares",
+      "componente": "disciplinar",
+      "nombre": "Optativas Disciplinares / Rutas de Énfasis",
+      "exigidos": 22,
+      "obligatorios": 0,
+      "optativos": 22
+    },
+    {
+      "id": "trabajo-de-grado",
+      "componente": "disciplinar",
+      "nombre": "Trabajo de Grado",
+      "exigidos": 6,
+      "obligatorios": 6,
+      "optativos": 0
+    },
+    {
+      "id": "libre-eleccion-idiomas",
+      "componente": "libre-eleccion",
+      "nombre": "Libre Elección e Idiomas",
+      "exigidos": 36,
+      "obligatorios": 0,
+      "optativos": 36
+    }
+  ]
+}

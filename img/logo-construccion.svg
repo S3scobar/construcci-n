@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <!-- Gradientes con la paleta de Construcción -->
+    <linearGradient id="cementoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#EEE5D8"/>
+    </linearGradient>
+    <linearGradient id="tierraGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B28B6B"/>
+      <stop offset="100%" stop-color="#805B46"/>
+    </linearGradient>
+    <linearGradient id="cafeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#805B46"/>
+      <stop offset="100%" stop-color="#4B4038"/>
+    </linearGradient>
+    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#805B46"/>
+      <stop offset="50%" stop-color="#B28B6B"/>
+      <stop offset="100%" stop-color="#4B4038"/>
+    </linearGradient>
+    <filter id="sombrasello" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#4B4038" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Fondo circular exterior con borde estructural -->
+  <circle cx="150" cy="150" r="142" fill="url(#cementoGrad)" stroke="url(#ringGrad)" stroke-width="7" filter="url(#sombrasello)"/>
+  <circle cx="150" cy="150" r="130" fill="none" stroke="#D5BFA5" stroke-width="2" stroke-dasharray="4 3"/>
+
+  <!-- Aro interior de precisión arquitectónica -->
+  <circle cx="150" cy="150" r="120" fill="none" stroke="#805B46" stroke-width="1.5" opacity="0.6"/>
+
+  <!-- Trama isométrica de retícula constructiva (andamio / grilla estructural) -->
+  <g opacity="0.12" stroke="#4B4038" stroke-width="1.2">
+    <line x1="80" y1="90" x2="220" y2="90"/>
+    <line x1="60" y1="130" x2="240" y2="130"/>
+    <line x1="60" y1="170" x2="240" y2="170"/>
+    <line x1="80" y1="210" x2="220" y2="210"/>
+    <line x1="100" y1="70" x2="100" y2="230"/>
+    <line x1="150" y1="60" x2="150" y2="240"/>
+    <line x1="200" y1="70" x2="200" y2="230"/>
+  </g>
+
+  <!-- Pilar / Pórtico estructural y Arco arquitectónico central -->
+  <!-- Base de cimentación y plinto -->
+  <rect x="70" y="212" width="160" height="12" rx="3" fill="#4B4038"/>
+  <rect x="85" y="202" width="130" height="10" rx="2" fill="#805B46"/>
+
+  <!-- Columnas / Pilares de carga -->
+  <path d="M96 202 L96 112 Q96 110 99 110 L112 110 Q115 110 115 112 L115 202 Z" fill="url(#cafeGrad)"/>
+  <path d="M185 202 L185 112 Q185 110 188 110 L201 110 Q204 110 204 112 L204 202 Z" fill="url(#cafeGrad)"/>
+
+  <!-- Estrías y detalles de textura en columnas -->
+  <line x1="105.5" y1="115" x2="105.5" y2="198" stroke="#EEE5D8" stroke-width="1.5" opacity="0.7"/>
+  <line x1="194.5" y1="115" x2="194.5" y2="198" stroke="#EEE5D8" stroke-width="1.5" opacity="0.7"/>
+
+  <!-- Arco de medio punto / Bóveda constructiva -->
+  <path d="M115 130 C115 98 185 98 185 130" fill="none" stroke="#B28B6B" stroke-width="6" stroke-linecap="round"/>
+  <path d="M115 142 C115 115 185 115 185 142" fill="none" stroke="#805B46" stroke-width="3" stroke-dasharray="3 3"/>
+
+  <!-- Viga de coronación / Entablamento estructural -->
+  <polygon points="80,108 220,108 210,94 90,94" fill="url(#tierraGrad)"/>
+  <rect x="88" y="90" width="124" height="4" fill="#B28B6B"/>
+
+  <!-- Frontón / Triángulo de escuadra y compás (Geometría del Constructor) -->
+  <polygon points="150,56 82,90 218,90" fill="#4B4038"/>
+  <polygon points="150,65 98,90 202,90" fill="#EEE5D8"/>
+
+  <!-- Compás técnico / Nivel de plomada central -->
+  <circle cx="150" cy="78" r="6" fill="#805B46"/>
+  <path d="M150 78 L138 128" stroke="#805B46" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M150 78 L162 128" stroke="#805B46" stroke-width="3.5" stroke-linecap="round"/>
+  <path d="M141 110 L159 110" stroke="#B28B6B" stroke-width="2.5"/>
+
+  <!-- Hojas de laurel / Oliva arquitectónica y sostenibilidad -->
+  <g fill="#65715B">
+    <!-- Rama izquierda -->
+    <path d="M72 170 Q62 155 64 140 Q70 152 72 170 Z"/>
+    <path d="M66 142 Q58 128 64 115 Q68 127 66 142 Z"/>
+    <path d="M74 195 Q64 182 68 168 Q74 180 74 195 Z"/>
+    <!-- Rama derecha -->
+    <path d="M228 170 Q238 155 236 140 Q230 152 228 170 Z"/>
+    <path d="M234 142 Q242 128 236 115 Q232 127 234 142 Z"/>
+    <path d="M226 195 Q236 182 232 168 Q226 180 226 195 Z"/>
+  </g>
+
+  <!-- Bloque / Ladrillo aparejado central con la fecha o siglas -->
+  <rect x="122" y="152" width="56" height="32" rx="4" fill="#805B46" stroke="#4B4038" stroke-width="2"/>
+  <line x1="122" y1="168" x2="178" y2="168" stroke="#D5BFA5" stroke-width="1.5"/>
+  <line x1="150" y1="152" x2="150" y2="168" stroke="#D5BFA5" stroke-width="1.5"/>
+  <line x1="136" y1="168" x2="136" y2="184" stroke="#D5BFA5" stroke-width="1.5"/>
+  <line x1="164" y1="168" x2="164" y2="184" stroke="#D5BFA5" stroke-width="1.5"/>
+
+  <!-- Inscripción inferior elegante -->
+  <text x="150" y="246" font-family="'Outfit', 'Segoe UI', Arial, sans-serif" font-size="12" font-weight="800" fill="#4B4038" text-anchor="middle" letter-spacing="3.5">CONSTRUCCIÓN</text>
+  <text x="150" y="260" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="8.5" font-weight="600" fill="#805B46" text-anchor="middle" letter-spacing="1.8">FACULTAD DE ARQUITECTURA</text>
+  <text x="150" y="271" font-family="'Plus Jakarta Sans', 'Segoe UI', Arial, sans-serif" font-size="7" font-weight="500" fill="#929493" text-anchor="middle" letter-spacing="1.2">UNAL · SEDE MEDELLÍN</text>
+</svg>
