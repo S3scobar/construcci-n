@@ -11,6 +11,32 @@ const POR_PAGINA = 12;
 const ROMANOS = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'];
 const ICONO_WHATSAPP = `<svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.63C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2M12.05 3.67C14.25 3.67 16.31 4.53 17.87 6.09C19.42 7.65 20.28 9.72 20.28 11.92C20.28 16.46 16.58 20.15 12.04 20.15C10.56 20.15 9.11 19.76 7.85 19L7.55 18.83L4.43 19.65L5.26 16.61L5.06 16.29C4.24 15 3.8 13.47 3.8 11.91C3.81 7.37 7.5 3.67 12.05 3.67M9.07 7.71C8.89 7.71 8.6 7.78 8.36 8.04C8.11 8.3 7.41 8.96 7.41 10.3C7.41 11.63 8.38 12.92 8.52 13.1C8.66 13.29 10.42 16 13.12 17.17C15.36 18.14 15.82 17.95 16.31 17.9C16.8 17.86 17.88 17.26 18.11 16.63C18.33 16 18.33 15.46 18.26 15.35C18.2 15.24 18.01 15.18 17.73 15.04C17.45 14.9 16.08 14.23 15.83 14.13C15.57 14.04 15.39 13.99 15.2 14.27C15.02 14.55 14.49 15.18 14.33 15.36C14.17 15.55 14.01 15.57 13.73 15.43C13.45 15.29 12.27 14.9 10.87 13.65C9.78 12.68 9.05 11.48 8.84 11.12C8.63 10.76 8.82 10.56 8.96 10.42C9.09 10.29 9.25 10.08 9.39 9.92C9.53 9.76 9.58 9.64 9.67 9.46C9.76 9.27 9.72 9.11 9.65 8.97C9.58 8.83 9.07 7.58 8.86 7.07C8.66 6.58 8.45 6.64 8.3 6.63C8.15 6.63 7.97 6.63 7.78 6.63"/></svg>`;
 
+/* ---------- Easter Egg: Pascal el Camaleón (Topografía) ---------- */
+const SVG_PASCAL = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 41 34" class="pascal-pixel-svg" shape-rendering="crispEdges" width="52" height="43" aria-hidden="true"><path fill="var(--pascal-dark, #000000)" d="M28,0h6v1h-6z M13,1h11v1h-11z M28,1h1v1h-1z M34,1h1v1h-1z M10,2h3v1h-3z M24,2h3v1h-3z M28,2h1v1h-1z M35,2h1v1h-1z M8,3h2v1h-2z M27,3h2v1h-2z M35,3h1v1h-1z M7,4h1v1h-1z M36,4h1v1h-1z M6,5h1v1h-1z M27,5h1v1h-1z M36,5h1v1h-1z M5,6h1v1h-1z M33,6h1v1h-1z M37,6h1v1h-1z M4,7h1v1h-1z M31,7h2v1h-2z M38,7h1v1h-1z M3,8h1v1h-1z M30,8h1v1h-1z M38,8h1v1h-1z M2,9h1v1h-1z M30,9h1v1h-1z M32,9h2v1h-2z M39,9h1v1h-1z M1,10h1v1h-1z M30,10h2v1h-2z M39,10h1v1h-1z M1,11h1v1h-1z M32,11h2v1h-2z M40,11h1v1h-1z M0,12h1v1h-1z M32,12h1v1h-1z M40,12h1v1h-1z M0,13h1v1h-1z M40,13h1v1h-1z M0,14h1v1h-1z M12,14h1v1h-1z M21,14h1v1h-1z M40,14h1v1h-1z M0,15h1v1h-1z M12,15h1v1h-1z M17,15h1v1h-1z M21,15h2v1h-2z M30,15h2v1h-2z M37,15h1v1h-1z M40,15h1v1h-1z M0,16h1v1h-1z M12,16h1v1h-1z M17,16h1v1h-1z M21,16h4v1h-4z M32,16h3v1h-3z M39,16h1v1h-1z M0,17h1v1h-1z M5,17h1v1h-1z M9,17h1v1h-1z M12,17h7v1h-7z M23,17h1v1h-1z M25,17h2v1h-2z M35,17h5v1h-5z M0,18h1v1h-1z M5,18h5v1h-5z M14,18h1v1h-1z M19,18h1v1h-1z M22,18h2v1h-2z M27,18h2v1h-2z M36,18h1v1h-1z M0,19h1v1h-1z M5,19h1v1h-1z M8,19h2v1h-2z M12,19h3v1h-3z M20,19h1v1h-1z M23,19h1v1h-1z M29,19h7v1h-7z M0,20h1v1h-1z M5,20h1v1h-1z M9,20h1v1h-1z M13,20h2v1h-2z M21,20h3v1h-3z M1,21h1v1h-1z M5,21h1v1h-1z M9,21h7v1h-7z M1,22h1v1h-1z M5,22h1v1h-1z M9,22h1v1h-1z M16,22h1v1h-1z M1,23h1v1h-1z M5,23h1v1h-1z M8,23h1v1h-1z M17,23h1v1h-1z M1,24h1v1h-1z M5,24h1v1h-1z M8,24h1v1h-1z M12,24h2v1h-2z M18,24h1v1h-1z M2,25h1v1h-1z M6,25h1v1h-1z M8,25h1v1h-1z M12,25h3v1h-3z M18,25h1v1h-1z M2,26h1v1h-1z M6,26h1v1h-1z M9,26h1v1h-1z M14,26h1v1h-1z M18,26h1v1h-1z M3,27h1v1h-1z M7,27h1v1h-1z M10,27h1v1h-1z M14,27h1v1h-1z M18,27h1v1h-1z M3,28h1v1h-1z M7,28h1v1h-1z M11,28h4v1h-4z M18,28h1v1h-1z M4,29h1v1h-1z M8,29h2v1h-2z M13,29h1v1h-1z M18,29h1v1h-1z M5,30h1v1h-1z M10,30h3v1h-3z M17,30h1v1h-1z M6,31h1v1h-1z M16,31h1v1h-1z M7,32h2v1h-2z M14,32h2v1h-2z M9,33h5v1h-5z"/><path fill="var(--pascal-shadow, #4ea32e)" d="M32,1h2v1h-2z M18,2h4v1h-4z M34,2h1v1h-1z M10,3h3v1h-3z M17,3h5v1h-5z M26,3h1v1h-1z M10,4h3v1h-3z M25,4h4v1h-4z M10,5h2v1h-2z M25,5h2v1h-2z M28,5h5v1h-5z M26,6h5v1h-5z M5,7h2v1h-2z M26,7h1v1h-1z M28,7h2v1h-2z M34,7h1v1h-1z M4,8h1v1h-1z M28,8h1v1h-1z M33,8h1v1h-1z M35,8h1v1h-1z M28,9h1v1h-1z M35,9h1v1h-1z M24,10h1v1h-1z M28,10h1v1h-1z M34,10h2v1h-2z M8,11h4v1h-4z M23,11h2v1h-2z M28,11h2v1h-2z M34,11h2v1h-2z M1,12h1v1h-1z M12,12h1v1h-1z M18,12h1v1h-1z M22,12h2v1h-2z M29,12h3v1h-3z M33,12h2v1h-2z M12,13h1v1h-1z M17,13h1v1h-1z M21,13h4v1h-4z M32,13h3v1h-3z M5,14h1v1h-1z M13,14h5v1h-5z M22,14h3v1h-3z M28,14h1v1h-1z M4,15h1v1h-1z M13,15h4v1h-4z M23,15h1v1h-1z M25,15h1v1h-1z M29,15h1v1h-1z M4,16h1v1h-1z M9,16h1v1h-1z M13,16h4v1h-4z M25,16h2v1h-2z M4,17h1v1h-1z M8,17h1v1h-1z M21,17h2v1h-2z M27,17h2v1h-2z M4,18h1v1h-1z M12,18h2v1h-2z M21,18h1v1h-1z M29,18h2v1h-2z M4,19h1v1h-1z M11,19h1v1h-1z M21,19h2v1h-2z M4,20h1v1h-1z M10,20h3v1h-3z M4,21h1v1h-1z M4,22h1v1h-1z M12,23h2v1h-2z M14,24h1v1h-1z M5,25h1v1h-1z M15,25h1v1h-1z M13,26h1v1h-1z M15,26h1v1h-1z M6,27h1v1h-1z M15,27h1v1h-1z M14,29h1v1h-1z M9,30h1v1h-1z"/><path fill="var(--pascal-body, #78cf36)" d="M29,2h1v1h-1z M29,3h2v1h-2z M17,4h4v1h-4z M29,4h4v1h-4z M12,5h1v1h-1z M16,5h5v1h-5z M33,5h1v1h-1z M10,6h4v1h-4z M16,6h5v1h-5z M24,6h2v1h-2z M34,6h1v1h-1z M10,7h4v1h-4z M15,7h6v1h-6z M23,7h3v1h-3z M27,7h1v1h-1z M35,7h1v1h-1z M5,8h3v1h-3z M10,8h11v1h-11z M22,8h6v1h-6z M4,9h5v1h-5z M10,9h18v1h-18z M36,9h1v1h-1z M5,10h19v1h-19z M25,10h3v1h-3z M36,10h1v1h-1z M2,11h1v1h-1z M6,11h2v1h-2z M12,11h11v1h-11z M25,11h3v1h-3z M36,11h1v1h-1z M2,12h10v1h-10z M13,12h5v1h-5z M19,12h3v1h-3z M24,12h5v1h-5z M35,12h2v1h-2z M2,13h10v1h-10z M13,13h4v1h-4z M18,13h3v1h-3z M25,13h7v1h-7z M35,13h1v1h-1z M3,14h2v1h-2z M6,14h6v1h-6z M18,14h3v1h-3z M25,14h3v1h-3z M32,14h4v1h-4z M1,15h3v1h-3z M5,15h7v1h-7z M18,15h3v1h-3z M24,15h1v1h-1z M26,15h3v1h-3z M1,16h3v1h-3z M5,16h4v1h-4z M10,16h2v1h-2z M18,16h3v1h-3z M27,16h3v1h-3z M1,17h3v1h-3z M6,17h2v1h-2z M10,17h2v1h-2z M19,17h2v1h-2z M29,17h3v1h-3z M2,18h2v1h-2z M10,18h2v1h-2z M16,18h1v1h-1z M20,18h1v1h-1z M31,18h4v1h-4z M3,19h1v1h-1z M10,19h1v1h-1z M1,20h3v1h-3z M2,21h2v1h-2z M3,22h1v1h-1z M12,22h3v1h-3z M4,23h1v1h-1z M9,23h1v1h-1z M11,23h1v1h-1z M14,23h1v1h-1z M2,24h3v1h-3z M9,24h3v1h-3z M15,24h1v1h-1z M17,24h1v1h-1z M3,25h2v1h-2z M9,25h2v1h-2z M16,25h2v1h-2z M3,26h3v1h-3z M12,26h1v1h-1z M16,26h2v1h-2z M5,27h1v1h-1z M11,27h3v1h-3z M16,27h1v1h-1z M6,28h1v1h-1z M15,28h1v1h-1z M5,29h3v1h-3z M15,29h3v1h-3z M6,30h1v1h-1z M8,30h1v1h-1z M13,30h1v1h-1z M15,30h2v1h-2z M9,31h2v1h-2z M12,31h2v1h-2z M9,32h2v1h-2z M13,32h1v1h-1z"/><path fill="var(--pascal-light, #ebf73c)" d="M29,1h3v1h-3z M13,2h5v1h-5z M22,2h2v1h-2z M30,2h4v1h-4z M13,3h4v1h-4z M22,3h4v1h-4z M31,3h4v1h-4z M8,4h2v1h-2z M13,4h4v1h-4z M21,4h4v1h-4z M33,4h3v1h-3z M7,5h3v1h-3z M13,5h3v1h-3z M21,5h4v1h-4z M34,5h2v1h-2z M6,6h4v1h-4z M14,6h2v1h-2z M21,6h3v1h-3z M31,6h2v1h-2z M35,6h2v1h-2z M7,7h3v1h-3z M14,7h1v1h-1z M21,7h2v1h-2z M30,7h1v1h-1z M33,7h1v1h-1z M36,7h2v1h-2z M8,8h2v1h-2z M21,8h1v1h-1z M29,8h1v1h-1z M31,8h2v1h-2z M34,8h1v1h-1z M36,8h2v1h-2z M3,9h1v1h-1z M9,9h1v1h-1z M29,9h1v1h-1z M31,9h1v1h-1z M34,9h1v1h-1z M37,9h2v1h-2z M2,10h3v1h-3z M29,10h1v1h-1z M32,10h2v1h-2z M37,10h2v1h-2z M3,11h3v1h-3z M30,11h2v1h-2z M37,11h3v1h-3z M37,12h3v1h-3z M1,13h1v1h-1z M36,13h4v1h-4z M1,14h2v1h-2z M29,14h3v1h-3z M36,14h4v1h-4z M32,15h5v1h-5z M38,15h2v1h-2z M30,16h2v1h-2z M35,16h4v1h-4z M32,17h3v1h-3z M1,18h1v1h-1z M35,18h1v1h-1z M1,19h2v1h-2z M2,22h1v1h-1z M10,22h2v1h-2z M15,22h1v1h-1z M2,23h2v1h-2z M10,23h1v1h-1z M15,23h2v1h-2z M16,24h1v1h-1z M11,25h1v1h-1z M10,26h2v1h-2z M4,27h1v1h-1z M17,27h1v1h-1z M4,28h2v1h-2z M16,28h2v1h-2z M7,30h1v1h-1z M14,30h1v1h-1z M7,31h2v1h-2z M11,31h1v1h-1z M14,31h2v1h-2z M11,32h2v1h-2z"/></svg>`;
+
+const PASCAL_PALETAS = [
+  { dark: '#000000', body: '#78cf36', shadow: '#4ea32e', light: '#ebf73c', nombre: 'Verde Camaleón' },
+  { dark: '#2b1a04', body: '#f59e0b', shadow: '#b45309', light: '#fef08a', nombre: 'Amarillo Solar' },
+  { dark: '#1e053a', body: '#a855f7', shadow: '#7e22ce', light: '#f0abfc', nombre: 'Púrpura Rapunzel' },
+  { dark: '#2a0d05', body: '#d97706', shadow: '#9a3412', light: '#fed7aa', nombre: 'Terracota Ladrillo' },
+  { dark: '#04242e', body: '#06b6d4', shadow: '#0e7490', light: '#a5f3fc', nombre: 'Turquesa Marino' },
+  { dark: '#3b061d', body: '#ec4899', shadow: '#be185d', light: '#fbcfe8', nombre: 'Rosa Corona' },
+  { dark: '#1c1917', body: '#78716c', shadow: '#44403c', light: '#e7e5e4', nombre: 'Tierra Topográfica' },
+  { dark: '#3a0314', body: '#f43f5e', shadow: '#be123c', light: '#fecdd3', nombre: 'Rojo Rubí' },
+  { dark: '#132604', body: '#84cc16', shadow: '#4d7c0f', light: '#d9f99d', nombre: 'Lima Neón' },
+  { dark: '#300f04', body: '#ea580c', shadow: '#9a3412', light: '#fed7aa', nombre: 'Naranja Atardecer' },
+  { dark: '#0b0d36', body: '#4f46e5', shadow: '#3730a3', light: '#c7d2fe', nombre: 'Azul Torre' },
+  { dark: '#022118', body: '#10b981', shadow: '#047857', light: '#a7f3d0', nombre: 'Menta Esmeralda' },
+  { dark: '#09090b', body: '#52525b', shadow: '#27272a', light: '#e4e4e7', nombre: 'Gris Grafito' },
+  { dark: '#190333', body: '#9333ea', shadow: '#6b21a8', light: '#e9d5ff', nombre: 'Lavanda Mágica' },
+  { dark: '#291802', body: '#eab308', shadow: '#a16207', light: '#fef9c3', nombre: 'Dorado Linterna' },
+  { dark: '#240a45', body: '#ec4899', shadow: '#831843', light: '#facc15', nombre: '✨ Encantado', magico: true }
+];
+
+let clicsPascal = 0;
+let indicePaletaPascal = 0;
+let audioPascal = null;
+
 let hoverCodigoActual = null;
 
 const estado = {
@@ -184,6 +210,165 @@ function marcarRelaciones(codigo) {
 
 /* ---------- Detalle ---------- */
 
+/* ---------- Funciones Easter Egg: Pascal ---------- */
+
+function aplicarPaletaPascal(elemento, paleta) {
+  if (!elemento || !paleta) return;
+  elemento.style.setProperty('--pascal-dark', paleta.dark);
+  elemento.style.setProperty('--pascal-body', paleta.body);
+  elemento.style.setProperty('--pascal-shadow', paleta.shadow || paleta.dark);
+  elemento.style.setProperty('--pascal-light', paleta.light);
+}
+
+function mostrarTooltipPascal(texto) {
+  const tooltip = $('#pascal-tooltip');
+  if (!tooltip) return;
+  tooltip.textContent = texto;
+  tooltip.classList.add('is-visible');
+  clearTimeout(tooltip._timer);
+  tooltip._timer = setTimeout(() => {
+    tooltip.classList.remove('is-visible');
+  }, 1200);
+}
+
+function lanzarParticulasPascal(contenedor) {
+  const particulasWrap = $('.pascal-camaleon__particulas', contenedor);
+  if (!particulasWrap) return;
+  const iconos = ['🎵', '✨', '🎶', '🌟', '🦎'];
+  particulasWrap.innerHTML = iconos.map((ico, i) =>
+    `<span class="pascal-nota pascal-nota--${i + 1}" style="--delay: ${i * 0.15}s; --x: ${(i - 2) * 12}px;">${ico}</span>`
+  ).join('');
+}
+
+function iniciarMusicaPascal() {
+  if (!audioPascal) {
+    audioPascal = new Audio('audio/pascal.mp3');
+    audioPascal.volume = 0.85;
+    audioPascal.addEventListener('ended', () => {
+      const player = $('#pascal-player');
+      player?.remove();
+      const btn = $('#pascal-camaleon');
+      btn?.classList.remove('is-playing');
+    });
+  }
+  audioPascal.currentTime = 0;
+  audioPascal.play().catch((err) => console.log('Audio autoplay prevented:', err));
+  mostrarPildoraMusica();
+}
+
+function mostrarPildoraMusica() {
+  let player = $('#pascal-player');
+  if (!player) {
+    player = document.createElement('div');
+    player.id = 'pascal-player';
+    player.className = 'pascal-player is-visible';
+    player.setAttribute('role', 'region');
+    player.setAttribute('aria-label', 'Reproductor de música de Pascal');
+    player.innerHTML = `
+      <div class="pascal-player__icono" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+          <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+        </svg>
+      </div>
+      <div class="pascal-player__info">
+        <span class="pascal-player__titulo">Enchanted</span>
+        <span class="pascal-player__sub">Easter egg desbloqueado · Pascal ✨</span>
+      </div>
+      <button class="pascal-player__btn" id="pascal-player-toggle" type="button" aria-label="Pausar o reanudar canción">
+        <svg id="pascal-player-icono-pause" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><rect x="6" y="4" width="4" height="16"/><rect x="14" y="4" width="4" height="16"/></svg>
+        <svg id="pascal-player-icono-play" style="display:none;" viewBox="0 0 24 24" fill="currentColor" width="13" height="13"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      </button>
+      <button class="pascal-player__cerrar" id="pascal-player-cerrar" type="button" aria-label="Cerrar reproductor">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" width="13" height="13"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    `;
+    document.body.appendChild(player);
+
+    $('#pascal-player-toggle', player)?.addEventListener('click', () => {
+      if (!audioPascal) return;
+      if (audioPascal.paused) {
+        audioPascal.play().catch(() => {});
+        actualizarEstadoReproductor(true);
+      } else {
+        audioPascal.pause();
+        actualizarEstadoReproductor(false);
+      }
+    });
+
+    $('#pascal-player-cerrar', player)?.addEventListener('click', () => {
+      if (audioPascal) {
+        audioPascal.pause();
+        audioPascal.currentTime = 0;
+      }
+      player.classList.remove('is-visible');
+      setTimeout(() => player.remove(), 250);
+      const btn = $('#pascal-camaleon');
+      btn?.classList.remove('is-playing');
+    });
+  } else {
+    player.classList.add('is-visible');
+    actualizarEstadoReproductor(true);
+  }
+}
+
+function actualizarEstadoReproductor(reproduciendo) {
+  const icoPause = $('#pascal-player-icono-pause');
+  const icoPlay = $('#pascal-player-icono-play');
+  if (icoPause && icoPlay) {
+    icoPause.style.display = reproduciendo ? 'block' : 'none';
+    icoPlay.style.display = reproduciendo ? 'none' : 'block';
+  }
+  const btn = $('#pascal-camaleon');
+  if (btn) {
+    btn.classList.toggle('is-playing', reproduciendo);
+  }
+}
+
+function iniciarEasterEggPascal() {
+  const btn = $('#pascal-camaleon');
+  if (!btn) return;
+
+  const paletaActual = PASCAL_PALETAS[indicePaletaPascal];
+  aplicarPaletaPascal(btn, paletaActual);
+
+  if (audioPascal && !audioPascal.paused) {
+    btn.classList.add('is-playing');
+  }
+
+  btn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    clicsPascal++;
+    indicePaletaPascal = (indicePaletaPascal + 1) % PASCAL_PALETAS.length;
+    const paleta = PASCAL_PALETAS[indicePaletaPascal];
+    aplicarPaletaPascal(btn, paleta);
+
+    // Animación de pulso
+    btn.classList.remove('is-pulsing');
+    void btn.offsetWidth;
+    btn.classList.add('is-pulsing');
+
+    mostrarTooltipPascal(paleta.nombre);
+
+    // Al llegar a 16 clics: ¡suena la canción!
+    if (clicsPascal === 16) {
+      btn.classList.add('is-playing');
+      lanzarParticulasPascal(btn);
+      iniciarMusicaPascal();
+    } else if (clicsPascal > 16 && audioPascal) {
+      // Alternar pausa / reproducción en clics posteriores
+      if (audioPascal.paused) {
+        audioPascal.play().catch(() => {});
+        btn.classList.add('is-playing');
+        actualizarEstadoReproductor(true);
+      } else {
+        audioPascal.pause();
+        btn.classList.remove('is-playing');
+        actualizarEstadoReproductor(false);
+      }
+    }
+  });
+}
+
 const fichaMateria = (codigo, clase = '') => {
   const a = estado.asignaturas.get(codigo);
   return `
@@ -223,6 +408,7 @@ function seleccionar(codigo, { desplazar = false } = {}) {
   const componente = buscarComponente(agrupacion.componente);
   const dependientes = estado.dependientes.get(codigo) || [];
   const semestre = a.semestre ? `Semestre ${ROMANOS[a.semestre - 1]}` : 'Optativa · sin semestre fijo';
+  const esTopografia = a.codigo === '3007401' || a.nombre.toLowerCase().includes('topograf');
 
   const bloqueWhatsapp = a.whatsapp ? `
     <div class="detalle__bloque detalle__bloque--whatsapp">
@@ -236,7 +422,17 @@ function seleccionar(codigo, { desplazar = false } = {}) {
 
   pintarDetalle(`
     <div class="detalle__cabeza">
-      <p class="detalle__codigo">Código ${esc(a.codigo)}</p>
+      <div class="detalle__codigo-fila">
+        <p class="detalle__codigo">Código ${esc(a.codigo)}</p>
+        ${esTopografia ? `
+          <div class="pascal-widget" id="pascal-widget">
+            <button class="pascal-camaleon" id="pascal-camaleon" type="button" aria-label="Pascal el camaleón (Easter Egg)" title="Pascal el camaleón">
+              ${SVG_PASCAL}
+              <span class="pascal-camaleon__particulas" aria-hidden="true"></span>
+            </button>
+            <span class="pascal-widget__tooltip" id="pascal-tooltip" aria-hidden="true"></span>
+          </div>` : ''}
+      </div>
       <h3>${esc(a.nombre)}</h3>
       <ul class="etiquetas">
         <li class="etiqueta etiqueta--cred">${creditosTexto(a.creditos)} ${a.creditos === 1 ? 'crédito' : 'créditos'}</li>
@@ -264,6 +460,10 @@ function seleccionar(codigo, { desplazar = false } = {}) {
       </div>
       ${a.porConfirmar ? `<p class="detalle__confirmar"><strong>Dato por confirmar.</strong> ${esc(a.porConfirmar)}</p>` : ''}
     </div>`, colorDe(a));
+
+  if (esTopografia) {
+    iniciarEasterEggPascal();
+  }
 
   marcarRelaciones(codigo);
   if (desplazar) {

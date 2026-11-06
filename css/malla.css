@@ -451,12 +451,223 @@ body.con-detalle { padding-bottom: 44vh; }
 .detalle__cerrar:hover { background: #dde3ea; }
 
 .detalle__cabeza { padding-right: 44px; }
+.detalle__codigo-fila {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+.detalle__codigo-grupo {
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+}
 .detalle__codigo {
   font-family: var(--letra-universidad);
   font-size: 12px;
   letter-spacing: .2em;
   text-transform: uppercase;
   color: var(--gris);
+  margin: 0;
+}
+
+/* Easter Egg: Camaleón Pascal (Topografía) */
+.pascal-widget {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+}
+
+.pascal-camaleon {
+  background: transparent;
+  border: none;
+  padding: 2px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.95;
+  transition: transform 0.16s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease, filter 0.2s ease;
+  position: relative;
+}
+
+.pascal-camaleon:hover {
+  opacity: 1;
+  transform: scale(1.12) translateY(-2px);
+}
+
+.pascal-camaleon:active {
+  transform: scale(0.92);
+}
+
+.pascal-camaleon.is-pulsing {
+  animation: pascalPop 0.28s ease-out;
+}
+
+.pascal-camaleon.is-playing {
+  opacity: 1;
+  filter: drop-shadow(0 0 8px rgba(148, 145, 78, 0.7));
+}
+
+.pascal-pixel-svg {
+  display: block;
+  width: 52px;
+  height: 43px;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+@keyframes pascalPop {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.22) rotate(-5deg); }
+  100% { transform: scale(1); }
+}
+
+.pascal-widget__tooltip {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: rgba(51, 54, 59, 0.94);
+  color: #ffffff;
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 600;
+  padding: 3px 8px;
+  border-radius: 6px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateY(-3px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  z-index: 20;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+.pascal-widget__tooltip.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.pascal-camaleon__particulas {
+  position: absolute;
+  top: -8px;
+  left: 50%;
+  pointer-events: none;
+}
+
+.pascal-nota {
+  position: absolute;
+  font-size: 13px;
+  animation: pascalFloat 1.8s ease-out forwards;
+  animation-delay: var(--delay, 0s);
+  opacity: 0;
+}
+
+@keyframes pascalFloat {
+  0% { opacity: 0; transform: translate(var(--x, 0), 0) scale(0.6); }
+  25% { opacity: 1; transform: translate(var(--x, 0), -12px) scale(1.1); }
+  100% { opacity: 0; transform: translate(calc(var(--x, 0) * 1.5), -28px) scale(0.8); }
+}
+
+/* Reproductor flotante discreto */
+.pascal-player {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 9998;
+  background: rgba(51, 54, 59, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(228, 220, 199, 0.22);
+  border-radius: 999px;
+  padding: 8px 14px 8px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.35);
+  color: #ffffff;
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.3s cubic-bezier(0.16, 1, 0.3, 1), transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  pointer-events: none;
+}
+
+.pascal-player.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.pascal-player__icono {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--oliva);
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  animation: pascalSpin 3s linear infinite;
+}
+
+@keyframes pascalSpin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pascal-player__info {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.pascal-player__titulo {
+  font-family: var(--letra-titulo);
+  font-size: 13px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.pascal-player__sub {
+  font-size: 10.5px;
+  color: var(--arena-lino);
+  opacity: 0.85;
+}
+
+.pascal-player__btn {
+  background: rgba(255, 255, 255, 0.12);
+  border: none;
+  color: #ffffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.pascal-player__btn:hover {
+  background: var(--arcilla);
+  transform: scale(1.08);
+}
+
+.pascal-player__cerrar {
+  background: transparent;
+  border: none;
+  color: var(--arena-lino);
+  cursor: pointer;
+  padding: 4px;
+  display: grid;
+  place-items: center;
+  opacity: 0.75;
+  transition: opacity 0.15s, color 0.15s;
+}
+
+.pascal-player__cerrar:hover {
+  opacity: 1;
+  color: #ffffff;
 }
 .detalle h3 {
   margin-top: 2px;
