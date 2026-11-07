@@ -109,7 +109,7 @@ a { color: var(--azul); }
   position: relative;
   isolation: isolate;
   overflow: hidden;
-  background-color: var(--verde-bosque);
+  background-color: #1e2227;
 }
 .foto::before,
 .foto::after {
@@ -118,14 +118,14 @@ a { color: var(--azul); }
   z-index: -1;
 }
 .foto::before {
-  inset: -14px;
+  inset: 0;
   background-size: cover;
   background-position: center;
-  filter: blur(2px);
+  filter: none;
 }
 .foto::after {
   inset: 0;
-  background: linear-gradient(180deg, rgba(75, 64, 56, 0.88) 0%, rgba(128, 91, 70, 0.8) 55%, rgba(178, 139, 107, 0.55) 100%);
+  background: linear-gradient(180deg, rgba(20, 24, 28, 0.58) 0%, rgba(20, 24, 28, 0.28) 45%, rgba(18, 22, 26, 0.68) 100%);
 }
 .foto--entrada::before { background-image: url(../img/campus-edificio.jpg); }
 .foto--panoramica::before,

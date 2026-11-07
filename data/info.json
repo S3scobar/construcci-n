@@ -55,6 +55,12 @@
       "descripcion": "Compromiso de apoyos y becas desde 16 horas, dónde cumplirlas en el Campus El Volador y normatividad."
     },
     {
+      "id": "movilidad",
+      "nombre": "Movilidad e Intercambios",
+      "icono": "globo",
+      "descripcion": "Convocatorias de movilidad académica internacional, convenios bilaterales, requisitos y experiencias estudiantiles de Construcción."
+    },
+    {
       "id": "faq",
       "nombre": "Preguntas Frecuentes",
       "icono": "faq",
@@ -687,6 +693,61 @@
           "url": "https://www.sia.unal.edu.co"
         }
       ]
+    },
+    {
+      "id": "movilidad-academica",
+      "categoria": "movilidad",
+      "etiqueta": "Oportunidades Globales · DRE Sede Medellín",
+      "titulo": "Intercambios Académicos Internacionales y Movilidad Estudiantil",
+      "subtitulo": "¡Estudiar en el exterior sí es posible y mucho más accesible de lo que crees! Muchos compañeros no se postulan simplemente porque desconocen los pasos o no saben a dónde dirigirse. En Construcción son numerosos los estudiantes que han vivido intercambios internacionales (con gran protagonismo hacia Estados Unidos, Europa y Latinoamérica).",
+      "enlaceExterno": {
+        "texto": "Ver Convocatorias de Movilidad Vigentes · UNAL Sede Medellín",
+        "url": "https://medellin.unal.edu.co/convocatorias-de-movilidad"
+      },
+      "enlaceOficial": {
+        "texto": "Dirección de Relaciones Exteriores (DRE) · Portal de Movilidad",
+        "url": "https://medellin.unal.edu.co/convocatorias-de-movilidad"
+      },
+      "puntosClave": [
+        {
+          "icono": "globo",
+          "titulo": "Experiencias reales en Construcción",
+          "texto": "Estudiantes de nuestro pregrado han realizado estancias académicas en Estados Unidos y otros países, homologando materias y adquiriendo visión global de la industria."
+        },
+        {
+          "icono": "check",
+          "titulo": "Acompañamiento institucional DRE",
+          "texto": "La Dirección de Relaciones Exteriores (DRE) de la Sede Medellín te orienta en convenios vigentes, exención de matrícula en la universidad de destino y apoyos disponibles."
+        },
+        {
+          "icono": "alerta",
+          "titulo": "Requisitos habituales",
+          "texto": "Haber superado el 40% de créditos del plan, contar con un buen P.A.P.A. (generalmente ≥ 3.5 o según la convocatoria) y suficiencia de idioma según el país de destino."
+        }
+      ],
+      "pasos": [
+        {
+          "paso": "1",
+          "titulo": "Explora convocatorias vigentes",
+          "desc": "Ingresa a medellin.unal.edu.co/convocatorias-de-movilidad y revisa universidades socias, calendarios de postulación y cupos por país."
+        },
+        {
+          "paso": "2",
+          "titulo": "Preaprueba tu plan de homologación",
+          "desc": "Acércate al Área Curricular de Construcción y Hábitat (areaconyhab_med@unal.edu.co) para validar qué asignaturas cursarás en el exterior."
+        },
+        {
+          "paso": "3",
+          "titulo": "Radica tu postulación ante la DRE",
+          "desc": "Presenta carta de motivación, constancia de notas, certificado de idioma y formulario de movilidad antes de la fecha límite."
+        },
+        {
+          "paso": "4",
+          "titulo": "Vive tu intercambio y homologa",
+          "desc": "Al terminar tu periodo académico internacional, la Facultad homologa las materias aprobadas en el SIA."
+        }
+      ],
+      "consejo": "No te frenes pensando que es un trámite inalcanzable. Revisa la página de la DRE, habla con compañeros que ya viajaron y prepara tu postulación con tiempo."
     }
   ],
   "faq": [
@@ -743,6 +804,18 @@
       "categoria": "corresponsabilidad",
       "pregunta": "¿Cuántas horas de corresponsabilidad debo pagar y qué pasa si no lo hago?",
       "respuesta": "Las horas van desde las <strong>16 horas semestrales</strong> (según el beneficio asignado: alimentación, alojamiento o residencia). Si no las completas antes del cierre del semestre, quedas en estado de incumplimiento y <strong>pierdes de inmediato el subsidio</strong> para el periodo siguiente, sin posibilidad de renovarlo hasta ponerte al día."
+    },
+    {
+      "id": "faq-matricula-extemporanea",
+      "categoria": "solicitudes",
+      "pregunta": "¿Qué pasa si se me pasó la fecha de pagar el recibo de matrícula?",
+      "respuesta": "Si se te pasó la fecha límite de pago ordinario y extraordinario de tu recibo, la solución reglamentaria es enviar una solicitud formal de <strong>matrícula extemporánea</strong> al <strong>Comité Asesor del Programa Curricular de Construcción</strong>.<br><br>Redacta una carta explicando el motivo por el cual no pudiste cancelar a tiempo, incluye tu nombre completo, número de documento y código estudiantil, y envíala al correo oficial del Área Curricular: <strong>areaconyhab_med@unal.edu.co</strong> para que el Comité estudie el caso y autorice la habilitación del recibo en el SIA."
+    },
+    {
+      "id": "faq-perdida-carnet",
+      "categoria": "solicitudes",
+      "pregunta": "¿Qué pasa si pierdo mi carnet estudiantil?",
+      "respuesta": "Si perdiste tu carnet físico institucional, ten en cuenta:<br><br>1. <strong>Carnet Digital Inmediato:</strong> Para ingresar a los campus de la Sede Medellín (El Volador, Río y Robledo) o acceder a préstamos de biblioteca, puedes usar válidamente tu <strong>carnet digital en la app móvil UNAL</strong> o desde el portal del SIA en tu celular.<br><br>2. <strong>Solicitud de Duplicado Físico:</strong> Si necesitas el plástico físico, genera y paga el recibo de derechos pecuniarios por concepto de «Duplicado de carné estudiantil» en Pagos Virtuales UNAL, y radica el comprobante ante la <strong>División de Registro y Matrícula</strong> de la Sede para la reimpresión."
     }
   ],
   "glosario": [
@@ -799,6 +872,11 @@
       "titulo": "Bienestar Universitario Sede Medellín",
       "url": "https://bienestar.medellin.unal.edu.co/",
       "descripcion": "Gestión alimentaria, residencias, convocatorias de corresponsabilidad y salud estudiantil."
+    },
+    {
+      "titulo": "Convocatorias de Movilidad Académica (DRE Sede Medellín)",
+      "url": "https://medellin.unal.edu.co/convocatorias-de-movilidad",
+      "descripcion": "Intercambios estudiantiles internacionales, convenios bilaterales con universidades de Estados Unidos, Europa y Latinoamérica."
     }
   ],
   "asesoria": {
@@ -808,6 +886,16 @@
     "telefono": "(+57 604) 430 9000",
     "direccion": "Campus El Volador, Bloque 24, Medellín",
     "solicitudes": "https://arquitectura.medellin.unal.edu.co/secretaria-de-facultad/tramites-estudiantiles",
-    "representacion": "319 3584740"
+    "representacion": "319 3584740",
+    "escuelaConstruccion": {
+      "nombre": "Escuela de Construcción",
+      "correo": "escuelaconst_med@unal.edu.co",
+      "ubicacion": "Campus El Volador · Bloque 24, Facultad de Arquitectura"
+    },
+    "areaCurricular": {
+      "nombre": "Área Curricular de Construcción y Hábitat (Comité Asesor)",
+      "correo": "areaconyhab_med@unal.edu.co",
+      "tramites": "Matrículas extemporáneas, solicitudes académicas y cancelaciones"
+    }
   }
 }

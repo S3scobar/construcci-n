@@ -697,6 +697,486 @@
 }
 
 
+/* ---------- 4. Fortalezas Exclusivas del Pregrado ---------- */
+
+.fortalezas-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: start;
+  gap: 28px;
+  margin-top: 24px;
+}
+
+.fortaleza-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 34px 30px;
+  background: #ffffff;
+  border-radius: 24px;
+  border: 1.5px solid var(--madera);
+  box-shadow: 0 12px 32px -10px rgba(75, 64, 56, 0.12);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+}
+
+.fortaleza-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 44px -12px rgba(75, 64, 56, 0.18);
+}
+
+.fortaleza-card--laboratorio {
+  border-left: 7px solid var(--tierra);
+}
+
+.fortaleza-card--habitat {
+  border-left: 7px solid var(--oliva);
+}
+
+.fortaleza-card__cabeza {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.fortaleza-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.fortaleza-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-family: var(--letra-universidad);
+  font-size: 11.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+
+.fortaleza-badge--lab {
+  background: rgba(128, 91, 70, 0.1);
+  border: 1px solid rgba(128, 91, 70, 0.35);
+  color: var(--tierra);
+}
+
+.fortaleza-badge--hab {
+  background: rgba(148, 145, 78, 0.12);
+  border: 1px solid rgba(148, 145, 78, 0.35);
+  color: #5d5b27;
+}
+
+.fortaleza-sello {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 10px;
+  border-radius: 6px;
+  background: var(--papel);
+  border: 1px dashed var(--madera);
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .06em;
+  color: var(--cafe-profundo);
+  text-transform: uppercase;
+}
+
+.fortaleza-sello--verde {
+  border-color: var(--oliva);
+  color: #4b491f;
+}
+
+.fortaleza-card__icono-box {
+  width: 52px;
+  height: 52px;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--tierra), var(--madera));
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  box-shadow: 0 6px 16px -4px rgba(128, 91, 70, 0.4);
+}
+
+.fortaleza-card__icono-box--hab {
+  background: linear-gradient(135deg, var(--oliva), #5b5924);
+  box-shadow: 0 6px 16px -4px rgba(148, 145, 78, 0.45);
+}
+
+.fortaleza-stat {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(245, 243, 238, 0.95), rgba(228, 220, 199, 0.4));
+  border: 1px solid var(--linea);
+  margin-bottom: 20px;
+}
+
+.fortaleza-stat--hab {
+  background: linear-gradient(135deg, rgba(247, 246, 238, 0.95), rgba(226, 224, 185, 0.35));
+}
+
+.fortaleza-stat__cifra {
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.fortaleza-stat__num {
+  font-family: var(--letra-titulo);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--tierra);
+}
+
+.fortaleza-stat--hab .fortaleza-stat__num {
+  font-size: 26px;
+  letter-spacing: .08em;
+  color: var(--oliva);
+}
+
+.fortaleza-stat__den {
+  font-family: var(--letra-titulo);
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--tinta-suave);
+}
+
+.fortaleza-stat__info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.fortaleza-stat__resaltado {
+  font-size: 14.5px;
+  font-weight: 700;
+  color: var(--cafe-profundo);
+  line-height: 1.3;
+}
+
+.fortaleza-stat__bajada {
+  margin: 0;
+  font-size: 12.5px;
+  color: var(--tinta-suave);
+  line-height: 1.45;
+}
+
+.fortaleza-card__resumen {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.fortaleza-card__titulares {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 2px;
+}
+
+/* Botón interactivo para desplegar / contraer la card */
+.fortaleza-card__toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 18px;
+  padding: 12px 18px;
+  background: var(--papel, #f7f4ee);
+  border: 1.5px solid rgba(128, 91, 70, 0.3);
+  border-radius: 14px;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  color: var(--tierra);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 8px rgba(75, 64, 56, 0.05);
+}
+
+.fortaleza-card__toggle:hover {
+  background: var(--tierra);
+  color: #ffffff;
+  border-color: var(--tierra);
+  box-shadow: 0 4px 14px rgba(128, 91, 70, 0.25);
+  transform: translateY(-1px);
+}
+
+.fortaleza-card--habitat .fortaleza-card__toggle {
+  color: var(--oliva);
+  border-color: rgba(148, 145, 78, 0.38);
+}
+
+.fortaleza-card--habitat .fortaleza-card__toggle:hover {
+  background: var(--oliva);
+  color: #ffffff;
+  border-color: var(--oliva);
+  box-shadow: 0 4px 14px rgba(148, 145, 78, 0.3);
+}
+
+.fortaleza-card__toggle-icono {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.05);
+  color: inherit;
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.2s ease;
+}
+
+.fortaleza-card__toggle:hover .fortaleza-card__toggle-icono {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.fortaleza-card.is-abierta .fortaleza-card__toggle-icono {
+  transform: rotate(180deg);
+}
+
+.fortaleza-card.is-abierta .fortaleza-card__toggle {
+  background: rgba(128, 91, 70, 0.08);
+  border-color: var(--tierra);
+}
+
+.fortaleza-card--habitat.is-abierta .fortaleza-card__toggle {
+  background: rgba(148, 145, 78, 0.1);
+  border-color: var(--oliva);
+}
+
+/* Animación con CSS Grid para despliegue ultra suave */
+.fortaleza-card__desplegable {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.38s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+  opacity: 0;
+}
+
+.fortaleza-card.is-abierta .fortaleza-card__desplegable {
+  grid-template-rows: 1fr;
+  opacity: 1;
+}
+
+.fortaleza-card__desplegable-interior {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-top: 18px;
+}
+
+.fortaleza-card__titulo {
+  font-family: var(--letra-titulo);
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--cafe-profundo);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.fortaleza-card__ubicacion {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  color: var(--tierra);
+  margin: 0;
+}
+
+.fortaleza-card--habitat .fortaleza-card__ubicacion {
+  color: var(--oliva);
+}
+
+.fortaleza-card__destacado {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--cafe-profundo);
+  font-weight: 600;
+  padding: 14px 16px;
+  border-radius: 12px;
+  background: var(--papel);
+  border: 1px solid var(--linea);
+}
+
+.fortaleza-card__descripcion {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--tinta);
+}
+
+.fortaleza-card__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.fortaleza-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--marfil);
+  border: 1px solid var(--linea);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--cafe-profundo);
+  line-height: 1.35;
+}
+
+.fortaleza-chip svg {
+  color: var(--tierra);
+  flex-shrink: 0;
+}
+
+.fortaleza-pilares {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 4px;
+}
+
+.fortaleza-pilares__titulo {
+  font-family: var(--letra-universidad);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  color: var(--oliva);
+  margin: 0;
+}
+
+.fortaleza-pilares__lista {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.fortaleza-pilar-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--marfil);
+  border: 1px solid var(--linea);
+  transition: border-color 0.2s, background 0.2s;
+}
+
+.fortaleza-pilar-item:hover {
+  border-color: var(--oliva);
+  background: #ffffff;
+}
+
+.fortaleza-pilar-num {
+  display: inline-grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: var(--oliva);
+  color: #ffffff;
+  font-family: var(--letra-titulo);
+  font-size: 11px;
+  font-weight: 800;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.fortaleza-pilar-contenido {
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--tinta);
+}
+
+.fortaleza-pilar-nombre {
+  color: var(--cafe-profundo);
+  font-weight: 700;
+  margin-right: 4px;
+}
+
+.fortaleza-pilar-detalle {
+  color: var(--tinta-suave);
+}
+
+.fortaleza-card__pie {
+  margin-top: auto;
+  padding-top: 24px;
+}
+
+.boton-fortaleza {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 22px;
+  border-radius: 999px;
+  font-family: var(--letra-universidad);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #ffffff;
+  background: var(--tierra);
+  border: 1.5px solid var(--madera);
+  box-shadow: 0 4px 14px -3px rgba(128, 91, 70, 0.4);
+  transition: all 0.2s ease;
+}
+
+.boton-fortaleza:hover {
+  background: var(--madera);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -3px rgba(128, 91, 70, 0.5);
+  color: #ffffff;
+}
+
+.boton-fortaleza--hab {
+  background: var(--oliva);
+  border-color: #615f27;
+  box-shadow: 0 4px 14px -3px rgba(148, 145, 78, 0.45);
+}
+
+.boton-fortaleza--hab:hover {
+  background: #5b5924;
+  box-shadow: 0 8px 20px -3px rgba(148, 145, 78, 0.55);
+}
+
+@media (max-width: 960px) {
+  .fortalezas-grid {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+  .fortaleza-card {
+    padding: 26px 20px;
+  }
+}
+
+
 /* ---------- 5. Perfil del Arquitecto(a) Constructor(a) ---------- */
 
 .perfil__rejilla-profesional {
@@ -1019,6 +1499,13 @@
   gap: 2px;
 }
 
+.grupo-card__tags-top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
 .grupo-card__tipo {
   font-family: var(--letra-universidad);
   font-size: 11px;
@@ -1026,6 +1513,18 @@
   text-transform: uppercase;
   color: var(--arena);
   font-weight: 700;
+}
+
+.grupo-card__subtipo {
+  font-family: var(--letra-universidad);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--marfil);
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
 }
 
 .grupo-card__nombre {
@@ -1036,11 +1535,72 @@
   line-height: 1.25;
 }
 
+.grupo-card__director {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin: 10px 0 12px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.25);
+  border: 1px solid rgba(213, 191, 165, 0.2);
+  color: var(--arena);
+  font-size: 13px;
+}
+
+.grupo-card__director strong {
+  color: #ffffff;
+}
+
 .grupo-card__descripcion {
   font-size: 14px;
   line-height: 1.6;
   color: var(--marfil);
+  margin-bottom: 14px;
+}
+
+.grupo-card__lineas-box {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px dashed rgba(213, 191, 165, 0.25);
+  border-radius: 12px;
+  padding: 12px 14px;
+  margin-bottom: 12px;
   flex: 1;
+}
+
+.grupo-card__lineas-label {
+  display: block;
+  font-family: var(--letra-universidad);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  color: var(--arena);
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.grupo-card__lineas {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.grupo-card__linea-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #f1ede6;
+}
+
+.grupo-card__bullet {
+  color: var(--arena);
+  flex-shrink: 0;
+  margin-top: 2px;
 }
 
 .grupo-card__acciones {
@@ -1397,9 +1957,13 @@ body[data-pagina="inicio"] {
 .perfil__rejilla-profesional .rasgo-profesional:nth-child(3) { transition-delay: 0.22s; }
 .perfil__rejilla-profesional .rasgo-profesional:nth-child(4) { transition-delay: 0.30s; }
 
+.fortalezas-grid .fortaleza-card:nth-child(1) { transition-delay: 0.08s; }
+.fortalezas-grid .fortaleza-card:nth-child(2) { transition-delay: 0.22s; }
+
 .semilleros-grid .grupo-card:nth-child(1) { transition-delay: 0.08s; }
-.semilleros-grid .grupo-card:nth-child(2) { transition-delay: 0.18s; }
-.semilleros-grid .grupo-card:nth-child(3) { transition-delay: 0.28s; }
+.semilleros-grid .grupo-card:nth-child(2) { transition-delay: 0.16s; }
+.semilleros-grid .grupo-card:nth-child(3) { transition-delay: 0.24s; }
+.semilleros-grid .grupo-card:nth-child(4) { transition-delay: 0.32s; }
 
 /* Cota inferior de rasgo profesional animada */
 .rasgo-profesional .rasgo-profesional__cota-linea {

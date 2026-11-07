@@ -220,17 +220,6 @@ function aplicarPaletaPascal(elemento, paleta) {
   elemento.style.setProperty('--pascal-light', paleta.light);
 }
 
-function mostrarTooltipPascal(texto) {
-  const tooltip = $('#pascal-tooltip');
-  if (!tooltip) return;
-  tooltip.textContent = texto;
-  tooltip.classList.add('is-visible');
-  clearTimeout(tooltip._timer);
-  tooltip._timer = setTimeout(() => {
-    tooltip.classList.remove('is-visible');
-  }, 1200);
-}
-
 function lanzarParticulasPascal(contenedor) {
   const particulasWrap = $('.pascal-camaleon__particulas', contenedor);
   if (!particulasWrap) return;
@@ -347,8 +336,6 @@ function iniciarEasterEggPascal() {
     void btn.offsetWidth;
     btn.classList.add('is-pulsing');
 
-    mostrarTooltipPascal(paleta.nombre);
-
     // Al llegar a 16 clics: ¡suena la canción!
     if (clicsPascal === 16) {
       btn.classList.add('is-playing');
@@ -426,11 +413,10 @@ function seleccionar(codigo, { desplazar = false } = {}) {
         <p class="detalle__codigo">Código ${esc(a.codigo)}</p>
         ${esTopografia ? `
           <div class="pascal-widget" id="pascal-widget">
-            <button class="pascal-camaleon" id="pascal-camaleon" type="button" aria-label="Pascal el camaleón (Easter Egg)" title="Pascal el camaleón">
+            <button class="pascal-camaleon" id="pascal-camaleon" type="button" aria-label="Pascal el camaleón (Easter Egg)">
               ${SVG_PASCAL}
               <span class="pascal-camaleon__particulas" aria-hidden="true"></span>
             </button>
-            <span class="pascal-widget__tooltip" id="pascal-tooltip" aria-hidden="true"></span>
           </div>` : ''}
       </div>
       <h3>${esc(a.nombre)}</h3>

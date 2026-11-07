@@ -37,6 +37,7 @@ const ICONOS = {
   reloj: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>',
   estrella: '<svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
   alerta: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>',
+  globo: '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>',
   externo: '<svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>'
 };
 
@@ -802,13 +803,30 @@ function pintarAsesoria() {
   caja.innerHTML = `
     <h2>${esc(a.titulo)}</h2>
     <p>${esc(a.texto)}</p>
-    <a class="info-asesoria__correo" href="mailto:${esc(a.correo)}">${esc(a.correo)}</a>
+    <div class="info-asesoria__contactos-grid">
+      <div class="info-asesoria__card-contacto">
+        <h4>Escuela de Construcción</h4>
+        <p class="info-asesoria__card-desc">Facultad de Arquitectura · UNAL Sede Medellín</p>
+        <a class="info-asesoria__correo" href="mailto:escuelaconst_med@unal.edu.co">escuelaconst_med@unal.edu.co</a>
+        <span class="info-asesoria__ubicacion">Campus El Volador · Bloque 24</span>
+      </div>
+      <div class="info-asesoria__card-contacto">
+        <h4>Área Curricular y Comité Asesor</h4>
+        <p class="info-asesoria__card-desc">Matrículas extemporáneas, solicitudes académicas y trámites</p>
+        <a class="info-asesoria__correo" href="mailto:areaconyhab_med@unal.edu.co">areaconyhab_med@unal.edu.co</a>
+        <span class="info-asesoria__ubicacion">Coordinación Pregrado en Construcción</span>
+      </div>
+      <div class="info-asesoria__card-contacto">
+        <h4>Secretaría de Facultad</h4>
+        <p class="info-asesoria__card-desc">Atención estudiantil general y resoluciones oficiales</p>
+        <a class="info-asesoria__correo" href="mailto:${esc(a.correo)}">${esc(a.correo)}</a>
+        <span class="info-asesoria__ubicacion">${esc(a.telefono)} · ${esc(a.direccion)}</span>
+      </div>
+    </div>
     <ul class="info-asesoria__datos">
-      <li>Representación Estudiantil de Construcción: Johana Andrea · <a href="https://wa.me/573193584740" target="_blank" rel="noopener noreferrer"><strong>💬 WhatsApp (+57) 319 358 4740</strong></a> · <a href="https://www.instagram.com/construccionunal/" target="_blank" rel="noopener noreferrer"><strong>@construccionunal</strong></a></li>
-      <li>Portal web desarrollado por Santiago Escobar Arias · <a href="https://wa.me/573123772091" target="_blank" rel="noopener noreferrer">(+57) 312 377 2091</a></li>
-      <li>Teléfono Facultad de Arquitectura: ${esc(a.telefono)}</li>
-      <li>${esc(a.direccion)}</li>
-      <li><a href="${esc(a.solicitudes)}" target="_blank" rel="noopener noreferrer">Trámites y solicitudes de la Facultad de Arquitectura</a></li>
+      <li><strong>Representación Estudiantil de Construcción:</strong> Johana Andrea · <a href="https://wa.me/573193584740" target="_blank" rel="noopener noreferrer"><strong>💬 WhatsApp (+57) 319 358 4740</strong></a> · <a href="https://www.instagram.com/construccionunal/" target="_blank" rel="noopener noreferrer"><strong>@construccionunal</strong></a></li>
+      <li><strong>Desarrollo y administración web:</strong> Santiago Escobar Arias · <a href="https://wa.me/573123772091" target="_blank" rel="noopener noreferrer">(+57) 312 377 2091</a></li>
+      <li><a href="${esc(a.solicitudes)}" target="_blank" rel="noopener noreferrer"><strong>Portal oficial:</strong> Trámites y solicitudes de la Facultad de Arquitectura ↗</a></li>
     </ul>`;
 }
 

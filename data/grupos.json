@@ -1,35 +1,66 @@
 [
   {
-    "id": "gic",
-    "nombre": "Grupo de Investigación en Construcción (GIC)",
-    "logo": "img/logo-construccion.svg",
-    "logoCuadrado": "img/logo-construccion.svg",
-    "tipo": "Grupo de investigación MinCiencias (Cat. A)",
+    "id": "construccion-y-ciencia",
+    "nombre": "Construcción y Ciencia",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Muy relacionado con Construcción",
+    "director": "Jhon Jesús Muñoz Echavarría",
     "color": "#795446",
-    "enlace": "https://arquitectura.medellin.unal.edu.co/",
-    "email": "escuelaconst_med@unal.edu.co",
-    "descripcion": "Grupo insignia de la Escuela de Construcción de la UNAL Medellín. Desarrolla proyectos científicos y de consultoría en patología de la edificación, tecnología de materiales, interventoría técnica y gestión del hábitat."
+    "enlace": "http://www.hermes.unal.edu.co/pages/Consultas/Semillero.xhtml?id=485&utm_source",
+    "enlaceTexto": "Consultar en Hermes UNAL",
+    "descripcion": "Semillero de investigación estrechamente articulado al pregrado en Construcción, enfocado en el estudio experimental de materiales y técnicas tradicionales e innovadoras del hábitat.",
+    "lineas": [
+      "Materiales y técnicas constructivas",
+      "Construcción sostenible y materiales alternativos",
+      "Patrimonio y cultura técnica del hábitat"
+    ]
   },
   {
-    "id": "simc",
-    "nombre": "Semillero en Materiales de Construcción (SIMC)",
-    "logo": "img/logo-construccion.svg",
-    "logoCuadrado": "img/logo-construccion.svg",
-    "tipo": "Semillero de investigación",
+    "id": "sigcon",
+    "nombre": "Gestión de la Construcción (SIGCON)",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Gestión, Productividad y Sostenibilidad",
+    "director": "Carlos Andrés Rúa Machado",
     "color": "#7D7660",
-    "enlace": "https://arquitectura.medellin.unal.edu.co/",
-    "email": "areaconstrucyhab_med@unal.edu.co",
-    "descripcion": "Semillero experimental dedicado al ensayo, análisis físico-mecánico y diseño de nuevos conglomerantes, morteros y concretos sustentables a partir del reciclaje de residuos de construcción y demolición (RCD)."
+    "enlace": "http://www.hermes.unal.edu.co/pages/Consultas/Semillero.xhtml?id=387&utm_source",
+    "enlaceTexto": "Consultar en Hermes UNAL",
+    "descripcion": "Espacio investigativo dedicado a la optimización de procesos, planificación, control técnico y administrativo de proyectos de edificación e infraestructura.",
+    "lineas": [
+      "Gestión y administración de la construcción",
+      "Productividad y competitividad en obras",
+      "Sostenibilidad y gestión ambiental"
+    ]
   },
   {
-    "id": "ciencias-ambiente",
-    "nombre": "Ciencias de la Construcción y Hábitat",
-    "logo": "img/logo-construccion.svg",
-    "logoCuadrado": "img/logo-construccion.svg",
-    "tipo": "Semillero formativo",
-    "color": "#33363B",
-    "enlace": "https://arquitectura.medellin.unal.edu.co/",
-    "email": "secfacarq_med@unal.edu.co",
-    "descripcion": "Espacio interdisciplinar de formación que vincula el diseño técnico, la modelación de procesos y la construcción sostenible con el ordenamiento territorial y las necesidades comunitarias del territorio."
+    "id": "grinco",
+    "nombre": "Conglomerantes y Construcción (GRINCO)",
+    "tipo": "Grupo de Investigación",
+    "subtipo": "Tecnología de Materiales y Durabilidad",
+    "director": "Ary Alaín Hoyos Montilla",
+    "color": "#4A5D4E",
+    "enlace": "http://www.hermes.unal.edu.co/pages/Consultas/Semillero.xhtml?id=2798&utm_source",
+    "enlaceTexto": "Consultar en Hermes UNAL",
+    "descripcion": "Grupo y semillero de investigación con amplia trayectoria en el análisis físico-químico, mecánico y patológico de matrices cementicias y durabilidad de estructuras.",
+    "lineas": [
+      "Materiales cementicios y conglomerantes",
+      "Patología y durabilidad de edificaciones",
+      "Tecnología y sostenibilidad de la construcción"
+    ]
+  },
+  {
+    "id": "sicc",
+    "nombre": "Ingeniería Circular para la Construcción (SICC)",
+    "tipo": "Semillero de Investigación",
+    "subtipo": "Economía Circular y Ciclo de Vida",
+    "director": "Yhan Paul Arias Jaramillo",
+    "color": "#3B5A6F",
+    "enlace": "https://sites.google.com/unal.edu.co/siccunalmed?utm_source",
+    "enlaceTexto": "Visitar Sitio Oficial SICC",
+    "descripcion": "Semillero pionero en la transición hacia modelos circulares en la industria constructiva, valorización de residuos, evaluación ambiental y durabilidad.",
+    "lineas": [
+      "Economía circular aplicada al sector constructor",
+      "Durabilidad y desempeño de materiales",
+      "Análisis del ciclo de vida (ACV) de edificaciones"
+    ]
   }
 ]

@@ -160,6 +160,68 @@
     ],
     "nota": "Para consultar resoluciones y reglamentación, acude a la Secretaría de la Facultad de Arquitectura (Bloque 24, Campus El Volador)."
   },
+  "fortalezas": [
+    {
+      "id": "laboratorio-construccion",
+      "tipo": "INFRAESTRUCTURA Y PRÁCTICA EXPERIMENTAL",
+      "badge": "Exclusividad Nacional · Bloque 25",
+      "sello": "1 de 6 en Colombia",
+      "titulo": "Laboratorio de Construcción Propio",
+      "ubicacion": "Bloque 25 · Campus El Volador",
+      "destacado": "En todo el país sólo 6 universidades dictan esta carrera y nosotros somos los únicos que tenemos un laboratorio propio y exclusivo disponible para nuestra formación práctica y el desarrollo de nuestras investigaciones.",
+      "descripcion": "Instalación técnica especializada de la Facultad de Arquitectura dotada con equipos para ensayos mecánicos, control de calidad, análisis de patología edilicia e innovación en materiales sostenibles al servicio de estudiantes y docentes.",
+      "puntos": [
+        "Ensayos físicos y mecánicos de materiales de construcción",
+        "Diseño experimental de concretos, morteros y nuevos conglomerantes",
+        "Pruebas de durabilidad, compresión, flexión y control de obra",
+        "Espacio de investigación formativa y trabajos de grado aplicados"
+      ],
+      "enlace": {
+        "texto": "Ver Laboratorio de Construcción (Bloque 25)",
+        "url": "https://direcciondelaboratorios.medellin.unal.edu.co/12-facultad-de-arquitectura/16-laboratorio-de-construccion.html#sobre-el-laboratorio"
+      },
+      "icono": "materiales",
+      "color": "var(--tierra)"
+    },
+    {
+      "id": "escuela-habitat",
+      "tipo": "INVESTIGACIÓN SOCIAL Y TERRITORIAL",
+      "badge": "Referente de Ciudad · Escuela del Hábitat",
+      "sello": "Unidad de Documentación Única",
+      "titulo": "Escuela del Hábitat y Unidad de Documentación",
+      "ubicacion": "Bloque 24, Of. 421 · Facultad de Arquitectura",
+      "destacado": "La carrera se potencia con la prestigiosa Escuela del Hábitat (CEHAP) y su Unidad de Documentación única en la ciudad, un centro de pensamiento ampliamente referenciado a nivel nacional e internacional.",
+      "descripcion": "Articula la formación técnica del constructor con el impacto social, la planificación territorial y el desarrollo de comunidades:",
+      "pilares": [
+        {
+          "titulo": "Perspectiva interdisciplinaria",
+          "detalle": "Estudia el hábitat desde una mirada integral entre arquitectura, ingeniería, ciencias sociales y ambiente."
+        },
+        {
+          "titulo": "Vivienda y territorio",
+          "detalle": "Investiga a profundidad la vivienda y su relación directa con el ordenamiento territorial."
+        },
+        {
+          "titulo": "Construcción y producción social",
+          "detalle": "Trabaja en la producción social del hábitat, tecnologías apropiadas y autogestión comunitaria."
+        },
+        {
+          "titulo": "Ordenamiento y justicia socioespacial",
+          "detalle": "Aborda la planificación territorial con criterios de equidad, sostenibilidad y derecho a la ciudad."
+        },
+        {
+          "titulo": "Procesos comunitarios y políticas públicas",
+          "detalle": "Participa activamente en procesos comunitarios, investigación aplicada y formulación de políticas públicas."
+        }
+      ],
+      "enlace": {
+        "texto": "Conoce la Escuela del Hábitat",
+        "url": "https://arquitectura.medellin.unal.edu.co/escuelas/escuelas"
+      },
+      "icono": "habitat",
+      "color": "var(--oliva)"
+    }
+  ],
   "fuentes": [
     {
       "titulo": "Pregrado en Construcción · Facultad de Arquitectura UNAL",
